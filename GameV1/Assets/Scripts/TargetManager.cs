@@ -28,8 +28,7 @@ public class TargetManager : MonoBehaviour
         return false;
     }
 
-
-    private bool IsVisible2(Camera c, GameObject target)
+    private bool IsVisible2(GameObject target)
     {
         foreach (Transform transform in target.transform)
         {
@@ -47,6 +46,7 @@ public class TargetManager : MonoBehaviour
         }
         return false;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,17 +56,17 @@ public class TargetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var targetScript = target.GetComponent<ghostMovement>();
-        targetScript.isSeen = false;
-        targetScript.isFacing = false;
+        var ghost = target.GetComponent<ghostMovement>();
+        ghost.isSeen = false;
+        ghost.isFacing = false;
         if (IsVisible(cam, target))
         {
             chatterloopsnapshot.TransitionTo(0.1f);
-            targetScript.isFacing = true;
-            if (IsVisible2(cam, target))
-                targetScript.isSeen = true;
+            ghost.isFacing = true;
+            if (IsVisible2(target))
+                ghost.isSeen = true;
         }
-        if (targetScript.isSeen == false)
+        if (ghost.isSeen == false)
         {
             mainloopsnapshot.TransitionTo(1f);
         }
