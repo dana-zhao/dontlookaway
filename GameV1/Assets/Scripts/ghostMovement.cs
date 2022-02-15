@@ -61,9 +61,11 @@ public class ghostMovement : MonoBehaviour
     {
         // add burst to prevent stuck
         float dist = Vector3.Distance(target.transform.position, transform.position);
-        float actualSpeed = Vector3.Distance(oldPosition, transform.position);
-        if (actualSpeed < desiredSpeed / 1.7f) speed *= 1.7f;
+        float actualSpeed = Vector3.Distance(oldPosition, transform.position)/ Time.deltaTime;
+        print(actualSpeed);
+        if (actualSpeed < desiredSpeed) speed *= 1.27f;
         else speed = desiredSpeed;
+        oldPosition = transform.position;
 
         if (isSeen)
         {
