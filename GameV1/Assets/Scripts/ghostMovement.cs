@@ -122,3 +122,4 @@ public class ghostMovement : MonoBehaviour
         else movement(speed);
     }
 }
+
