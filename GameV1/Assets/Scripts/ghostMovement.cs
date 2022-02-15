@@ -18,21 +18,21 @@ public class ghostMovement : MonoBehaviour
     // boolean for monster condition
     public bool flipp = false;
 
-    // temp variable for chasing speed when condition is flipped
-    public float chaseSpeed = 0.1f;
-
     // Keeping track of the last player position seen
     Vector3 lastPositionSeen;
 
     // Check if in line of sight
     public bool isVisible = true;
+    private Vector3 oldPosition;
 
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
         lastPositionSeen = target.transform.position;
         flipp = false;
         //controller.enabled = false;
+
     }
 
     void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
@@ -57,8 +57,19 @@ public class ghostMovement : MonoBehaviour
         else timeLeft = 1.5f;
     }
 
-    void flippMovement(float speed)
+    void flippMovement(float desiredSpeed)
     {
+        // add burst to prevent stuck
+        float dist = Vector3.Distance(target.transform.position, transform.position);
+        float actualSpeed = Vector3.Distance(oldPosition, transform.position);
+        if (actualSpeed < desiredSpeed / 1.7f) speed *= 1.7f;
+        else speed = desiredSpeed;
+
+        if (isSeen)
+        {
+            speed *= 1.7f;
+            speed += .7f;
+        }
         // if the player is in direct line of sight, then move straight to the player
         if (isVisible)
         {
@@ -91,19 +102,32 @@ public class ghostMovement : MonoBehaviour
                 //Q.Add(target.transform.position);
         }
         Vector3 destination = Q[0];
-        controllerMove(transform.position, destination, speed * Time.deltaTime * 2f);
-        if (Vector3.Distance(transform.position, destination) < 0.1) Q.RemoveAt(0);
+        controllerMove(transform.position, destination, speed * Time.deltaTime * 1.7f);
+        if (Vector3.Distance(transform.position, destination) < 0.5) Q.RemoveAt(0);
     }
 
     private bool isInSight(Vector3 position, GameObject target)
     {
         RaycastHit hit;
-        var rayDirection = target.transform.position - position;
-        if (Physics.Raycast(position, rayDirection, out hit, Mathf.Infinity))
+        Vector3 tempPos1, tempPos2;
+        float off = .8f;
+
+        float[] off1 = new float[] { 0f, -off, -off, off, off, 0f, -off, 0f, off };
+        float[] off2 = new float[] { 0f, -off, off, -off, off, -off, 0f, off, 0f };
+        for (int i = 0; i < 5; i++)
         {
-            if (hit.transform.name.Contains(targetName)) return true;
+            tempPos1 = target.transform.position;
+            tempPos1.y += off1[i];
+            tempPos2 = position;
+            tempPos2.y += off2[i];
+            var rayDirection = tempPos1 - tempPos2;
+            if (Physics.Raycast(tempPos2, rayDirection, out hit, Mathf.Infinity))
+            {
+                if (!hit.transform.name.Contains(targetName)) return false;
+            }
+            else return false;
         }
-        return false;
+        return true;
     }
 
     // Update is called once per frame
@@ -117,8 +141,8 @@ public class ghostMovement : MonoBehaviour
             flipp = !flipp;
         }
         float dist = Vector3.Distance(target.transform.position, transform.position);
-        float speed = dist;
-        if (flipp) flippMovement(speed);
+        float desiredSpeed = dist;
+        if (flipp) flippMovement(desiredSpeed);
         else movement(speed);
     }
 }
