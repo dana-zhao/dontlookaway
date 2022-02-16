@@ -12,7 +12,7 @@ public class PickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        detectionRange = 3;
+        detectionRange = 5;
         if (player == null)
              player = GameObject.FindGameObjectWithTag("Player");
     }
