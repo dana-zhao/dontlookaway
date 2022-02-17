@@ -15,6 +15,7 @@ public class TasksCompletion : MonoBehaviour
                 {"Clear crystal", "Clear Crystal 1"},
                 {"Clear crystal (1)", "Clear Crystal 2"},
                 {"Clear crystal (2)", "Clear Crystal 3"},
+                {"Key", "Key for exit"},
             }
         },
     };
@@ -28,6 +29,8 @@ public class TasksCompletion : MonoBehaviour
 
     public GameObject Objective;
     public GameObject ObjectiveTemplate;
+
+    public GameObject Inventory;
 
     private bool openI = false;
 
@@ -65,7 +68,8 @@ public class TasksCompletion : MonoBehaviour
         // GameObject t = ToogleGroup.transform.Find(taskname).gameObject;
         // t.GetComponent<Toggle>().isOn = true;
         simpleGameObject[taskname].GetComponent<Toggle>().isOn = true;
-        complexGameObject[taskname].SetActive(false);
+        // complexGameObject[taskname].SetActive(false);
+        complexGameObject[taskname].transform.SetParent(Inventory.transform, false);
     }
 
     private void LoadTask(){
