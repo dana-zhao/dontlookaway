@@ -22,7 +22,7 @@ public class StartGame : MonoBehaviour
         startGameObj.SetActive(true);
         TimerObj.SetActive(false);
         PausePanel.SetActive(false);
-        TaskList.SetActive(false);
+        TaskList.SetActive(true);
 
         _timerText = TimerObj.GetComponent<Text>();
         _timerText.text = "Time: 0";
@@ -49,11 +49,12 @@ public class StartGame : MonoBehaviour
     void Update()
     {
         // start
-        if (Input.GetKeyDown("space") && startGameObj.activeSelf)
+        if (startGameObj.activeSelf && Input.GetKeyDown("space"))
         {
             startGameObj.SetActive(false);
             TimerObj.SetActive(true);
             TaskList.SetActive(true);
+            TaskList.GetComponent<TasksCompletion>().Close();
             Time.timeScale = 1;
         }
 
