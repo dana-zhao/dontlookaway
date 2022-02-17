@@ -29,6 +29,8 @@ public class TasksCompletion : MonoBehaviour
     public GameObject Objective;
     public GameObject ObjectiveTemplate;
 
+    public GameObject Inventory;
+
     private bool openI = false;
 
     private Dictionary<string, GameObject> simpleGameObject = new Dictionary<string, GameObject>();
@@ -65,7 +67,8 @@ public class TasksCompletion : MonoBehaviour
         // GameObject t = ToogleGroup.transform.Find(taskname).gameObject;
         // t.GetComponent<Toggle>().isOn = true;
         simpleGameObject[taskname].GetComponent<Toggle>().isOn = true;
-        complexGameObject[taskname].SetActive(false);
+        // complexGameObject[taskname].SetActive(false);
+        complexGameObject[taskname].transform.SetParent(Inventory.transform, false);
     }
 
     private void LoadTask(){
