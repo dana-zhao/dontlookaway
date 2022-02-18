@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TempFootsteps : MonoBehaviour
 {
-    public float stepRate = 0.8f;
+    public float stepRate = 0.9f;
     public float stepCoolDown;
     public AudioSource sfx_TempFootStep;
 
