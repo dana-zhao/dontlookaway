@@ -73,7 +73,7 @@ public class ghostMovement : MonoBehaviour
 
         if (isSeen)
         {
-            speed *= 1.7f;
+            speed *= 2.7f;
             speed += .7f;
         }
         // if the player is in direct line of sight, then move straight to the player
@@ -148,7 +148,7 @@ public class ghostMovement : MonoBehaviour
         }
         float dist = Vector3.Distance(target.transform.position, transform.position);
         float desiredSpeed = dist;
-        if (flipp) flippMovement(desiredSpeed);
+        if (flipp) flippMovement(desiredSpeed / 1.77f);
         else movement(desiredSpeed);
     }
 }
