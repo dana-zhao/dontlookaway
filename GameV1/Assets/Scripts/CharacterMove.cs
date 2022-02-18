@@ -15,7 +15,7 @@ public class CharacterMove : MonoBehaviour
     private float _maxRotV;
 
     [SerializeField]
-    public AudioSource pickupsfx;
+    public AudioSource sfx_PlayerObjectBump;
 
     private const float _horizontalSpeed = 4.0f;
     private const float _verticalSpeed = 4.0f;
@@ -123,7 +123,16 @@ public class CharacterMove : MonoBehaviour
             objectsPickedUp += 1;
             Debug.Log("Objects picked up: " + objectsPickedUp.ToString());
         }
-        pickupsfx.Play();
+        
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Wall")
+        {
+            sfx_PlayerObjectBump.pitch = (Random.Range(0.6f, 0.9f));
+            sfx_PlayerObjectBump.Play();
+        }
     }
 }
