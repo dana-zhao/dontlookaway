@@ -10,6 +10,8 @@ public class PickUp : MonoBehaviour
     private GameObject player = null;
 
     private TasksCompletion _TasksCompletion;
+
+    [SerializeField] public AudioSource sfx_CrystalSfxPickUp;
  
     // Start is called before the first frame update
     void Start()
@@ -32,8 +34,10 @@ public class PickUp : MonoBehaviour
             closeEnough = true;
         }
         if (closeEnough && Input.GetKeyDown(KeyCode.E)){
+            sfx_CrystalSfxPickUp.Play();
             this.gameObject.SetActive(false);
             _TasksCompletion.TaskComplete(this.gameObject.name);
+            
         }
     }
 }
