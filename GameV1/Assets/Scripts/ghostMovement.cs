@@ -47,19 +47,20 @@ public class ghostMovement : MonoBehaviour
         transform.LookAt(target.transform);
     }
 
-    void movement(float speed)
+    void movement(float desiredSpeed)
     {
         if (!isFacing && !isSeen)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+            //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, desiredSpeed * Time.deltaTime);
             transform.LookAt(target.transform);
+            flippMovement(desiredSpeed);
         }
         if (isFacing && !isSeen)
         {
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
             {
-                transform.position = target.transform.position - target.transform.forward * 50; ;
+                transform.position = target.transform.position - target.transform.forward * 50;
             }
         }
         else timeLeft = 1.5f;
