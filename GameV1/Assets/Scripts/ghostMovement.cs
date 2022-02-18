@@ -13,6 +13,8 @@ public class ghostMovement : MonoBehaviour
     float timeLeft = 1.5f;
     float flippDelay = 1.5f;
 
+    public GameObject Objective;
+
     // keep track of player's path
     private List<Vector3> Q = new List<Vector3>();
 
@@ -72,9 +74,9 @@ public class ghostMovement : MonoBehaviour
         else speed = desiredSpeed;
         oldPosition = transform.position;
 
-        if (isSeen)
+        if (isSeen && desiredSpeed > 0)
         {
-            speed *= 2.7f;
+            speed *= 2.57f;
             speed += .7f;
         }
         // if the player is in direct line of sight, then move straight to the player
@@ -148,6 +150,9 @@ public class ghostMovement : MonoBehaviour
             flipp = !flipp;
         }
 
+        if (Objective.transform.childCount <= 8)
+            flipp = true;
+
         float dist = Vector3.Distance(target.transform.position, transform.position);
         float desiredSpeed = dist;
 
@@ -157,7 +162,7 @@ public class ghostMovement : MonoBehaviour
             desiredSpeed = 0f;
         }
         else if (flipp)
-            desiredSpeed = desiredSpeed / 1.77f;
+            desiredSpeed = desiredSpeed / 2.57f;
         
         if (flipp) flippMovement(desiredSpeed);
         else movement(desiredSpeed);
