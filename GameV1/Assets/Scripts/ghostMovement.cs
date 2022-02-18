@@ -92,23 +92,23 @@ public class ghostMovement : MonoBehaviour
         else if (Q.Count == 1) Q.Add(target.transform.position);
         else
         {
-            if (isInSight(Q[Q.Count - 2], target)) Q[Q.Count - 1] = target.transform.position;
-            else if (Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
-                Q.Add(target.transform.position);
+            //if (isInSight(Q[Q.Count - 2], target)) Q[Q.Count - 1] = target.transform.position;
+            //else if (Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
+            //    Q.Add(target.transform.position);
 
-            //bool isAdded = false;
-            //for (int i = 1; i < Q.Count - 1; i++)
-            //{
-            //    if (isInSight(Q[i - 1], target))
-            //    {
-            //        Q[i + 1] = target.transform.position;
-            //        Q.RemoveRange(i + 2, Q.Count - i - 2);
-            //        isAdded = true;
-            //        break;
-            //    }
-            //}
-            //if (!isAdded && Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
-                //Q.Add(target.transform.position);
+            bool isAdded = false;
+            for (int i = 1; i < Q.Count - 1; i++)
+            {
+                if (isInSight(Q[i - 1], target))
+                {
+                    Q[i + 1] = target.transform.position;
+                    Q.RemoveRange(i + 2, Q.Count - i - 2);
+                    isAdded = true;
+                    break;
+                }
+            }
+            if (!isAdded && Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
+                Q.Add(target.transform.position);
         }
         Vector3 destination = Q[0];
         controllerMove(transform.position, destination, speed * Time.deltaTime * 1.7f);
