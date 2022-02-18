@@ -2983,6 +2983,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1236343954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4098016356304962045, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+  m_PrefabInstance: {fileID: 1978847958}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1241794825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4648,6 +4653,7 @@ MonoBehaviour:
   isFacing: 0
   target: {fileID: 37846052}
   targetName: Player
+  Objective: {fileID: 1236343954}
   flipp: 1
   isVisible: 1
   speed: 0
