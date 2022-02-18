@@ -150,7 +150,7 @@ public class ghostMovement : MonoBehaviour
             flipp = !flipp;
         }
 
-        if (Objective.transform.childCount <= 8)
+        if (Objective.transform.childCount <= 2)
             flipp = true;
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
