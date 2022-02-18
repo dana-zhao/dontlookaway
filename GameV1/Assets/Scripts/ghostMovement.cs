@@ -11,6 +11,7 @@ public class ghostMovement : MonoBehaviour
     public GameObject target;
     public string targetName = "Player";
     float timeLeft = 1.5f;
+    float flippDelay = 1.5f;
 
     // keep track of player's path
     private List<Vector3> Q = new List<Vector3>();
@@ -146,9 +147,19 @@ public class ghostMovement : MonoBehaviour
             Debug.Log("Monster condition flipped!");
             flipp = !flipp;
         }
+
         float dist = Vector3.Distance(target.transform.position, transform.position);
         float desiredSpeed = dist;
-        if (flipp) flippMovement(desiredSpeed / 1.77f);
+
+        if (flipp && flippDelay > 0)
+        {
+            flippDelay -= Time.deltaTime;
+            desiredSpeed = 0f;
+        }
+        else if (flipp)
+            desiredSpeed = desiredSpeed / 1.77f;
+        
+        if (flipp) flippMovement(desiredSpeed);
         else movement(desiredSpeed);
     }
 }
