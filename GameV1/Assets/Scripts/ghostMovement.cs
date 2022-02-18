@@ -5,6 +5,7 @@ using UnityEngine;
 public class ghostMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public UnityEngine.AI.NavMeshAgent agent;
     public bool isSeen;
     public bool isFacing;
     // public float speed = 5f;
@@ -35,23 +36,26 @@ public class ghostMovement : MonoBehaviour
         lastPositionSeen = target.transform.position;
         flipp = false;
         //controller.enabled = false;
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
 
     }
 
-    void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
-    {
-        Vector3 direction = targetPosition - position;
-        Vector3 movement = direction.normalized * speed;
-        if (movement.magnitude > direction.magnitude) movement = direction;
-        controller.Move(movement);
-        transform.LookAt(target.transform);
-    }
+    //void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
+    //{
+        //Vector3 direction = targetPosition - position;
+        //Vector3 movement = direction.normalized * speed;
+        //if (movement.magnitude > direction.magnitude) movement = direction;
+        //controller.Move(movement);
+        //transform.LookAt(target.transform);
+    //}
 
-    void movement(float desiredSpeed)
+    void movement(float speed)
     {
         if (!isFacing && !isSeen)
         {
-            //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, desiredSpeed * Time.deltaTime);
+            //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+            agent.destination = target.transform.position;
             transform.LookAt(target.transform);
             flippMovement(desiredSpeed);
         }
@@ -60,60 +64,77 @@ public class ghostMovement : MonoBehaviour
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
             {
-                transform.position = target.transform.position - target.transform.forward * 50;
+                //transform.position = target.transform.position - target.transform.forward * 50; 
+                agent.destination = target.transform.position;
+
             }
+        }
+        if (isFacing && isSeen)
+        {
+            agent.destination = transform.position;
         }
         else timeLeft = 1.5f;
     }
 
     void flippMovement(float desiredSpeed)
     {
+        agent.destination = target.transform.position;
+        transform.LookAt(target.transform);
+        if (isFacing)
+        {
+            agent.speed = desiredSpeed;
+        }
+        if (!isFacing)
+        {
+            agent.speed = desiredSpeed/2;
+        }
         // add burst to prevent stuck
-        float dist = Vector3.Distance(target.transform.position, transform.position);
-        float actualSpeed = Vector3.Distance(oldPosition, transform.position)/ Time.deltaTime;
-        if (actualSpeed < desiredSpeed) speed *= 1.27f;
-        else speed = desiredSpeed;
-        oldPosition = transform.position;
+        //float dist = Vector3.Distance(target.transform.position, transform.position);
+        //float actualSpeed = Vector3.Distance(oldPosition, transform.position)/ Time.deltaTime;
+        //if (actualSpeed < desiredSpeed) speed *= 1.27f;
+        //else speed = desiredSpeed;
+        //oldPosition = transform.position;
 
-        if (isSeen && desiredSpeed > 0)
-        {
-            speed *= 2.57f;
-            speed += .7f;
-        }
+        //if (isSeen && desiredSpeed > 0)
+        //{
+            //speed *= 2.57f;
+            //speed += .7f;
+        //}
         // if the player is in direct line of sight, then move straight to the player
-        if (isVisible)
-        {
-            Q.Clear();
-            controllerMove(transform.position, target.transform.position, speed * Time.deltaTime);
-            lastPositionSeen = target.transform.position;
+        //if (isVisible)
+        //{
+            //Q.Clear();
+            //controllerMove(transform.position, target.transform.position, speed * Time.deltaTime);
+            //lastPositionSeen = target.transform.position;
             
-            return;
-        }
-        if (Q.Count == 0) Q.Add(lastPositionSeen);
-        else if (Q.Count == 1) Q.Add(target.transform.position);
-        else
-        {
+            //return;
+        //}
+        //if (Q.Count == 0) Q.Add(lastPositionSeen);
+        //else if (Q.Count == 1) Q.Add(target.transform.position);
+        //else
+        //{
             //if (isInSight(Q[Q.Count - 2], target)) Q[Q.Count - 1] = target.transform.position;
             //else if (Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
-            //    Q.Add(target.transform.position);
+                //Q.Add(target.transform.position);
 
-            bool isAdded = false;
-            for (int i = 1; i < Q.Count - 1; i++)
-            {
-                if (isInSight(Q[i - 1], target))
-                {
-                    Q[i + 1] = target.transform.position;
-                    Q.RemoveRange(i + 2, Q.Count - i - 2);
-                    isAdded = true;
-                    break;
-                }
-            }
-            if (!isAdded && Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
-                Q.Add(target.transform.position);
-        }
-        Vector3 destination = Q[0];
-        controllerMove(transform.position, destination, speed * Time.deltaTime * 1.7f);
-        if (Vector3.Distance(transform.position, destination) < 0.5) Q.RemoveAt(0);
+            //bool isAdded = false;
+            //for (int i = 1; i < Q.Count - 1; i++)
+            //{
+            //    if (isInSight(Q[i - 1], target))
+            //    {
+            //        Q[i + 1] = target.transform.position;
+            //        Q.RemoveRange(i + 2, Q.Count - i - 2);
+            //        isAdded = true;
+            //        break;
+            //    }
+            //}
+            //if (!isAdded && Vector3.Distance(target.transform.position, Q[Q.Count - 1]) > 0.1)
+                //Q.Add(target.transform.position);
+        //}
+        //Vector3 destination = Q[0];
+        //controllerMove(transform.position, destination, speed * Time.deltaTime * 1.7f);
+        //if (Vector3.Distance(transform.position, destination) < 0.5) Q.RemoveAt(0);
+
     }
 
     private bool isInSight(Vector3 position, GameObject target)
