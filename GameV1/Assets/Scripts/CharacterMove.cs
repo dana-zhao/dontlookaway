@@ -21,7 +21,7 @@ public class CharacterMove : MonoBehaviour
     private const float _verticalSpeed = 4.0f;
     //private const float _inputScale = 0.2f;
     //private const float _jumpScale = 3.0f;
-    private const float _maxTiltAngle = 20.0f;
+    private const float _maxTiltAngle = 40.0f;
     private int objectsPickedUp = 0;
 
     public float Speed = 4f;
@@ -71,16 +71,21 @@ public class CharacterMove : MonoBehaviour
 
         _velocity.y += Gravity * Time.deltaTime;
         _controller.Move(_velocity * Time.deltaTime);
+
+        if (Time.timeScale != 0) {
+            _userRot += new Vector3(0, _rotationInputH * _horizontalSpeed, 0);
+            _userRot -= new Vector3(_rotationInputV * _verticalSpeed, 0, 0);
+            _userRot.x = Mathf.Clamp(_userRot.x, _minRotV, _maxRotV);
+
+            _transform.rotation = Quaternion.Euler(_userRot);
+        }
+        
     }
 
     private void FixedUpdate()
     {
 
-        _userRot += new Vector3(0, _rotationInputH * _horizontalSpeed, 0);
-        _userRot -= new Vector3(_rotationInputV * _verticalSpeed, 0, 0);
-        _userRot.x = Mathf.Clamp(_userRot.x, _minRotV, _maxRotV);
-
-        _transform.rotation = Quaternion.Euler(_userRot);
+        
         //_rigidbody.MovePosition(_rigidbody.position + _transform.forward * _playerInputV * _inputScale * Time.fixedDeltaTime + _transform.right * _playerInputH * _inputScale * Time.fixedDeltaTime)
         //_rigidbody.velocity += _transform.forward * _playerInputV * _inputScale;
         //_rigidbody.velocity += _transform.right * _playerInputH * _inputScale;

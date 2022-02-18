@@ -28,6 +28,8 @@ public class StartGame : MonoBehaviour
         _timerText.text = "Time: 0";
 
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.Locked;
+
         
     }
 
