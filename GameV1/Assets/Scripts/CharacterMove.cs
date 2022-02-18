@@ -21,7 +21,7 @@ public class CharacterMove : MonoBehaviour
     private const float _verticalSpeed = 4.0f;
     //private const float _inputScale = 0.2f;
     //private const float _jumpScale = 3.0f;
-    private const float _maxTiltAngle = 40.0f;
+    private const float _maxTiltAngle = 50.0f;
     private int objectsPickedUp = 0;
 
     public float Speed = 4f;
