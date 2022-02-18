@@ -14,7 +14,6 @@ public class Restart : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("space")){
-            Debug.Log("pressed");
             SceneManager.LoadScene("Gift_Shop");
         }
     }
