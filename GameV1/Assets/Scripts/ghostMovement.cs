@@ -8,7 +8,7 @@ public class ghostMovement : MonoBehaviour
     public UnityEngine.AI.NavMeshAgent agent;
     public bool isSeen;
     public bool isFacing;
-    // public float speed = 5f;
+    //public float speed = 5f;
     public GameObject target;
     public string targetName = "Player";
     float timeLeft = 1.5f;
@@ -57,7 +57,6 @@ public class ghostMovement : MonoBehaviour
             //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
             agent.destination = target.transform.position;
             transform.LookAt(target.transform);
-            flippMovement(desiredSpeed);
         }
         if (isFacing && !isSeen)
         {
@@ -74,6 +73,8 @@ public class ghostMovement : MonoBehaviour
             agent.destination = transform.position;
         }
         else timeLeft = 1.5f;
+
+        agent.speed = speed;
     }
 
     void flippMovement(float desiredSpeed)
@@ -187,7 +188,7 @@ public class ghostMovement : MonoBehaviour
             desiredSpeed = desiredSpeed / 2.57f;
         
         if (flipp) flippMovement(desiredSpeed);
-        else movement(desiredSpeed / 1.67f);
+        else movement(desiredSpeed);
     }
 }
 
