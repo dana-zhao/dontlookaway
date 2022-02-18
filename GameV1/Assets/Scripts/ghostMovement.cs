@@ -166,7 +166,7 @@ public class ghostMovement : MonoBehaviour
             desiredSpeed = desiredSpeed / 2.57f;
         
         if (flipp) flippMovement(desiredSpeed);
-        else movement(desiredSpeed);
+        else movement(desiredSpeed / 1.67f);
     }
 }
 
