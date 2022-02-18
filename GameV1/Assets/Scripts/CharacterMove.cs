@@ -26,7 +26,7 @@ public class CharacterMove : MonoBehaviour
 
     public float Speed = 4f;
     public float JumpHeight = 2f;
-    public float Gravity = -9.81f;
+    private const float Gravity = -9.81f;
     //public LayerMask Ground;
 
     private CharacterController _controller;
@@ -60,14 +60,21 @@ public class CharacterMove : MonoBehaviour
 
         _isGrounded = _controller.isGrounded;
         if (_isGrounded && _velocity.y < 0)
+        {
             _velocity.y = 0f;
+        }
+
 
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         _moveDirection = transform.TransformDirection(move);
         _controller.Move(_moveDirection * Time.deltaTime * Speed);
 
+
         if (Input.GetButtonDown("Jump") && _isGrounded)
+        {
             _velocity.y += Mathf.Sqrt(JumpHeight * -2.0f * Gravity);
+        }
+
 
         _velocity.y += Gravity * Time.deltaTime;
         _controller.Move(_velocity * Time.deltaTime);
