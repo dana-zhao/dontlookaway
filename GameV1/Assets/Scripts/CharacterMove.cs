@@ -17,8 +17,8 @@ public class CharacterMove : MonoBehaviour
     [SerializeField]
     public AudioSource pickupsfx;
 
-    private const float _horizontalSpeed = 2.0f;
-    private const float _verticalSpeed = 2.0f;
+    private const float _horizontalSpeed = 4.0f;
+    private const float _verticalSpeed = 4.0f;
     //private const float _inputScale = 0.2f;
     //private const float _jumpScale = 3.0f;
     private const float _maxTiltAngle = 20.0f;
