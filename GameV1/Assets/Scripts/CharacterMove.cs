@@ -36,11 +36,12 @@ public class CharacterMove : MonoBehaviour
 
     //private Rigidbody _rigidbody;
     private Transform _transform;
+    public GameObject camera;
     // Start is called before the first frame update
     void Start()
     {
         //_rigidbody = GetComponent<Rigidbody>();
-        _transform = GetComponent<Transform>();
+        _transform = camera.transform;
         _userRot = _transform.rotation.eulerAngles;
         _minRotV = _userRot.x - _maxTiltAngle;
         _maxRotV = _userRot.x + _maxTiltAngle;
@@ -66,7 +67,7 @@ public class CharacterMove : MonoBehaviour
 
 
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        _moveDirection = transform.TransformDirection(move);
+        _moveDirection = _transform.TransformDirection(move);
         _controller.Move(_moveDirection * Time.deltaTime * Speed);
 
 
