@@ -57,6 +57,7 @@ public class ghostMovement : MonoBehaviour
             //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
             agent.destination = target.transform.position;
             transform.LookAt(target.transform);
+            flippMovement(desiredSpeed);
         }
         if (isFacing && !isSeen)
         {
@@ -65,6 +66,7 @@ public class ghostMovement : MonoBehaviour
             {
                 //transform.position = target.transform.position - target.transform.forward * 50; 
                 agent.destination = target.transform.position;
+
             }
         }
         if (isFacing && isSeen)
@@ -132,6 +134,7 @@ public class ghostMovement : MonoBehaviour
         //Vector3 destination = Q[0];
         //controllerMove(transform.position, destination, speed * Time.deltaTime * 1.7f);
         //if (Vector3.Distance(transform.position, destination) < 0.5) Q.RemoveAt(0);
+
     }
 
     private bool isInSight(Vector3 position, GameObject target)
@@ -184,7 +187,7 @@ public class ghostMovement : MonoBehaviour
             desiredSpeed = desiredSpeed / 2.57f;
         
         if (flipp) flippMovement(desiredSpeed);
-        else movement(desiredSpeed);
+        else movement(desiredSpeed / 1.67f);
     }
 }
 

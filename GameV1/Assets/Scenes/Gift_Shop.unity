@@ -2380,11 +2380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999999272673939514, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.81
+      value: -4.829
       objectReference: {fileID: 0}
     - target: {fileID: 999999272673939514, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.23
+      value: -0.178
       objectReference: {fileID: 0}
     - target: {fileID: 999999272673939514, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2442,6 +2442,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0039400663, y: 0.01963775, z: 0.003928989}
   m_Center: {x: -0.020409275, y: 0.004737595, z: 0.00030015793}
+--- !u!114 &916371963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494794517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0eb59985d7784c73ae6bc12753738b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectionRange: 0
+  closeEnough: 0
+  sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!1 &930512180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,7 +4338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999999272673939514, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.06
+      value: -5.68
       objectReference: {fileID: 0}
     - target: {fileID: 999999272673939514, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
       propertyPath: m_LocalRotation.w
