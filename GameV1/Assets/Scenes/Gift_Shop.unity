@@ -1069,7 +1069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196890816}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Collectables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1946,7 +1946,7 @@ GameObject:
   - component: {fileID: 709250393}
   - component: {fileID: 709250392}
   - component: {fileID: 709250391}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1982,6 +1982,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1647494667}
 --- !u!65 &709250392
 BoxCollider:
@@ -2187,6 +2189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clear crystal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6276144995106616060, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
 --- !u!4 &791755395 stripped
@@ -2208,6 +2214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &791755401
 BoxCollider:
@@ -2423,6 +2431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue crystal
       objectReference: {fileID: 0}
+    - target: {fileID: 3751450958199636039, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
 --- !u!4 &916371957 stripped
@@ -2457,6 +2469,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!1 &930512180
 GameObject:
@@ -2816,6 +2830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clear crystal
       objectReference: {fileID: 0}
+    - target: {fileID: 6276144995106616060, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
 --- !u!4 &1081410530 stripped
@@ -2837,6 +2855,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1081410536
 BoxCollider:
@@ -3676,6 +3696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue crystal (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3751450958199636039, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
 --- !u!4 &1449402149 stripped
@@ -3697,6 +3721,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1449402155
 BoxCollider:
@@ -3778,6 +3804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clear crystal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6276144995106616060, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f820152d37fc6ac41be3c0983d0e7af0, type: 3}
 --- !u!4 &1462455732 stripped
@@ -3796,6 +3826,7 @@ GameObject:
   - component: {fileID: 1503362711}
   - component: {fileID: 1503362710}
   - component: {fileID: 1503362709}
+  - component: {fileID: 1503362712}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3870,6 +3901,66 @@ Transform:
   m_Father: {fileID: 37846056}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1503362712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503362708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 1503362711}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &1533134609 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3181267807446658164, guid: 5b828e1c54a04b848a172deffc843ad5, type: 3}
@@ -4373,6 +4464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue crystal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3751450958199636039, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7457c59b9fa4fc24c8d9638570fedd50, type: 3}
 --- !u!4 &1723256992 stripped
@@ -4394,6 +4489,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1723256998
 BoxCollider:
@@ -5326,7 +5423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6341535819349342674, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6341535819349342674, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5478,6 +5575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 0
   closeEnough: 0
+  FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
+  Objective: {fileID: 1236343954}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &2041063191
 BoxCollider:
@@ -5674,5 +5773,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
