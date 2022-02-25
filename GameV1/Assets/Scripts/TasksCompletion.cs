@@ -37,8 +37,11 @@ public class TasksCompletion : MonoBehaviour
     private Dictionary<string, GameObject> simpleGameObject = new Dictionary<string, GameObject>();
     private Dictionary<string, GameObject> complexGameObject = new Dictionary<string, GameObject>();
 
+    public GameStatus gameStatus;
+
     void Start()
     {
+        gameStatus = GameObject.FindObjectOfType<GameStatus>();
         LoadTask();
 
         foreach(KeyValuePair<string, string> task in tasks){
@@ -48,6 +51,7 @@ public class TasksCompletion : MonoBehaviour
             t.transform.SetParent(ToogleGroup.transform, false);
             t.SetActive(true);
             simpleGameObject[task.Key] = t;
+            gameStatus.newTask();
         }
 
         foreach(KeyValuePair<string, string> task in tasks){
@@ -65,11 +69,11 @@ public class TasksCompletion : MonoBehaviour
     }
 
     public void TaskComplete(string taskname){
-        // GameObject t = ToogleGroup.transform.Find(taskname).gameObject;
-        // t.GetComponent<Toggle>().isOn = true;
+
         simpleGameObject[taskname].GetComponent<Toggle>().isOn = true;
-        // complexGameObject[taskname].SetActive(false);
         complexGameObject[taskname].transform.SetParent(Inventory.transform, false);
+        gameStatus.collect();
+
     }
 
     private void LoadTask(){
