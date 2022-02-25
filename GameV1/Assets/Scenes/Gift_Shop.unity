@@ -32,7 +32,7 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
@@ -277,9 +277,9 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 50
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Range: 60
+  m_SpotAngle: 40
+  m_InnerSpotAngle: 4
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -4851,6 +4851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ghost: {fileID: 1851267726}
   Player: {fileID: 37846052}
+  gameStatus: {fileID: 0}
 --- !u!54 &1803728852
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5188,6 +5189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ghost: {fileID: 1851267726}
   Player: {fileID: 37846052}
+  gameStatus: {fileID: 0}
 --- !u!82 &1851267737
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5499,6 +5501,18 @@ PrefabInstance:
     - target: {fileID: 6817190012497614447, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013195565547350420, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013195565547350420, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9013195565547350420, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
