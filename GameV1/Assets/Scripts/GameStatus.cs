@@ -26,7 +26,7 @@ public class GameStatus : MonoBehaviour
 
     public void dead() {
         currentLife --;
-        healthbar.value = currentLife / MAXLIFE;
+        healthbar.value = (float)currentLife / MAXLIFE;
     }
 
     public bool allCollected(){
