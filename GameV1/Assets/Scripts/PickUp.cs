@@ -8,6 +8,7 @@ public class PickUp : MonoBehaviour
     public float detectionRange;
     public bool closeEnough;
     private GameObject player = null;
+    private Flashlight our_light;
     public GameObject FloatingTextPrefab;
     private TasksCompletion _TasksCompletion;
     private bool tutDisplayed = false;
@@ -19,6 +20,8 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         _TasksCompletion = GameObject.FindObjectOfType<TasksCompletion>();
+        // Our light
+        our_light = GameObject.FindObjectOfType<Flashlight>();
         if (!_TasksCompletion) {
             Debug.Log("not found");
         }
@@ -83,7 +86,12 @@ public class PickUp : MonoBehaviour
             sfx_CrystalSfxPickUp.Play();
             this.gameObject.SetActive(false);
             _TasksCompletion.TaskComplete(this.gameObject.name);
-            
+
+            // Code to refresh battery TODO: ADD BATTERY ITEM
+            if (this.gameObject.tag == "Battery"){
+                float amount = 0.01f;
+                our_light.ReplaceBattery(amount);
+            }
         }
     }
 }

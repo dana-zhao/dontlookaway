@@ -23,7 +23,7 @@ public class Flashlight : MonoBehaviour
         m_light.intensity = Mathf.Clamp(m_light.intensity, minBrightness, maxBrightness);
         if(drainOverTime == true && m_light.enabled == true){
             if (m_light.intensity > minBrightness){
-                m_light.intensity -= Time.deltaTime * (drainRate / 1000);
+                m_light.intensity -= Time.deltaTime * (drainRate / 600);
             }
         }
 
