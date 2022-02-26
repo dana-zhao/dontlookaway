@@ -14,7 +14,7 @@ public class Restart : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown("space")){
-            SceneManager.LoadScene("Gift_Shop");
+            SceneManager.LoadScene(GameStatus.currentLevel);
         }
     }
 }
