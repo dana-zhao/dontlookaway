@@ -14,7 +14,7 @@ public class ghostMovement : MonoBehaviour
     float timeLeft = 1.5f;
     float flippDelay = 1.5f;
 
-    public GameObject Objective;
+    public GameStatus gameStatus;
 
     // keep track of player's path
     private List<Vector3> Q = new List<Vector3>();
@@ -37,7 +37,7 @@ public class ghostMovement : MonoBehaviour
         flipp = false;
         //controller.enabled = false;
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-
+        gameStatus = GameObject.FindObjectOfType<GameStatus>();
 
     }
 
@@ -173,7 +173,7 @@ public class ghostMovement : MonoBehaviour
             flipp = !flipp;
         }
 
-        if (Objective.transform.childCount <= 2)
+        if (gameStatus.allCollected())
             flipp = true;
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
