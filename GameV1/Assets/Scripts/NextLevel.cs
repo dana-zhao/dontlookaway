@@ -3,27 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Win : MonoBehaviour
+public class NextLevel : MonoBehaviour
 {
     public GameStatus script;
-    public GameObject player;
-    private bool closeEnough1;
+    private bool closeEnough;
     private float detectionRange;
+    private string level;
+    
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        detectionRange = 3;
+        detectionRange = 5;
+        level = GameStatus.currentLevel;
+
+        if (level == "Gift_Shop"){
+            level = "Library";
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
- 
         if( Vector3.Distance( player.transform.position, this.transform.position) <= detectionRange ){
-            closeEnough1 = true;
+            closeEnough = true;
         }
-        if (closeEnough1 && script.allCollect && Input.GetKeyDown(KeyCode.E)){
-            SceneManager.LoadScene("Hallway1");
+
+        if(closeEnough && Input.GetKeyDown(KeyCode.E)){
+            SceneManager.LoadScene(level);
         }
     }
 }
