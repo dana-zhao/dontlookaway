@@ -38,6 +38,7 @@ public class ghostMovement : MonoBehaviour
         //controller.enabled = false;
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         gameStatus = GameObject.FindObjectOfType<GameStatus>();
+        agent.autoBraking = false;
 
     }
 
@@ -52,12 +53,19 @@ public class ghostMovement : MonoBehaviour
 
     void movement(float speed)
     {
-        if (!isFacing && !isSeen)
+        if (!isSeen)
         {
             //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
             agent.destination = target.transform.position;
-            transform.LookAt(target.transform);
+            agent.speed = speed;
+            transform.LookAt(agent.nextPosition);
         }
+        else
+        {
+            agent.speed = 0;
+            agent.destination = transform.position;
+        }
+        return;
         if (isFacing && !isSeen)
         {
             timeLeft -= Time.deltaTime;
