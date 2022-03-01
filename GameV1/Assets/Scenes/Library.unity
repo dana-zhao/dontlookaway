@@ -19896,6 +19896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battery
       objectReference: {fileID: 0}
+    - target: {fileID: 20813780578555832, guid: ade001e306c779742b7a8bd8f26dc182, type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 793234595618295042, guid: ade001e306c779742b7a8bd8f26dc182, type: 3}
       propertyPath: m_RootOrder
       value: 5
