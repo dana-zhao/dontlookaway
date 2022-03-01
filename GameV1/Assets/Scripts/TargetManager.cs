@@ -41,7 +41,7 @@ public class TargetManager : MonoBehaviour
                     return true;
             }
         }
-        return false;
+        //return false;
 
 
         float off = 1f;
