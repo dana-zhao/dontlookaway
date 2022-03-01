@@ -173,7 +173,7 @@ public class ghostMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isVisible = isInSight(transform.position, target);
+        //isVisible = isInSight(transform.position, target);
         //manually flipping the movement condition
         if (Input.GetKeyUp(KeyCode.F))
         {
