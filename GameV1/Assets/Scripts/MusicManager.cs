@@ -12,7 +12,7 @@ public class MusicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fader.TransitionTo(2f);
+        fader.TransitionTo(1.5f);
     }
 
     // Update is called once per frame
