@@ -26,7 +26,7 @@ public class CharacterMove : MonoBehaviour
 
     public float Speed = 4f;
     public float JumpHeight = 2f;
-    private const float Gravity = -9.81f;
+    private const float Gravity = -20.0f;
     //public LayerMask Ground;
 
     private CharacterController _controller;
