@@ -1829,6 +1829,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1647494667}
 --- !u!65 &709250392
 BoxCollider:
@@ -2061,6 +2062,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &791755401
 BoxCollider:
@@ -2316,6 +2318,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!1 &930512180
 GameObject:
@@ -2707,6 +2710,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1081410536
 BoxCollider:
@@ -3573,6 +3577,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1449402155
 BoxCollider:
@@ -4325,6 +4330,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &1723256998
 BoxCollider:
@@ -5316,6 +5322,7 @@ MonoBehaviour:
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
+  isTut: 1
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
 --- !u!65 &2041063191
 BoxCollider:

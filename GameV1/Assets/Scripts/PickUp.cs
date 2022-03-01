@@ -13,6 +13,7 @@ public class PickUp : MonoBehaviour
     private TasksCompletion _TasksCompletion;
     private bool tutDisplayed = false;
     public GameObject Objective;
+    public bool isTut = false;
 
     [SerializeField] public AudioSource sfx_CrystalSfxPickUp;
  
@@ -33,7 +34,7 @@ public class PickUp : MonoBehaviour
 
     void ShowFloatingText()
     {
-        //if (!Input.GetKeyUp(KeyCode.T)) return;
+        if (!isTut) return;
         Vector3 temp = new Vector3(Camera.main.transform.forward.x * 0.1f, transform.position.y+0.7f, Camera.main.transform.forward.z * 0.1f);
         Vector3 temp2 = new Vector3(transform.position.x, transform.position.y + 0.7f, transform.position.z);
         Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity);
