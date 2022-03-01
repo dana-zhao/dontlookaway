@@ -43,21 +43,27 @@ public class ghostMovement : MonoBehaviour
 
     //void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
     //{
-        //Vector3 direction = targetPosition - position;
-        //Vector3 movement = direction.normalized * speed;
-        //if (movement.magnitude > direction.magnitude) movement = direction;
-        //controller.Move(movement);
-        //transform.LookAt(target.transform);
+    //Vector3 direction = targetPosition - position;
+    //Vector3 movement = direction.normalized * speed;
+    //if (movement.magnitude > direction.magnitude) movement = direction;
+    //controller.Move(movement);
+    //transform.LookAt(target.transform);
     //}
 
     void movement(float speed)
     {
-        if (!isFacing && !isSeen)
+        if (!isSeen)
         {
+            agent.speed = speed;
             //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
             agent.destination = target.transform.position;
             transform.LookAt(target.transform);
         }
+        else { 
+              agent.speed = 0f;
+        }
+
+        return;
         if (isFacing && !isSeen)
         {
             timeLeft -= Time.deltaTime;

@@ -60,14 +60,21 @@ public class TargetManager : MonoBehaviour
     void Update()
     {
         var ghost = target.GetComponent<ghostMovement>();
+        var ghost2 = target.GetComponent<ghostMovement2>();
         ghost.isSeen = false;
         ghost.isFacing = false;
+        ghost2.isSeen = false;
+        ghost2.isFacing = false;
         if (IsVisible(cam, target))
         {
             chatterloopsnapshot.TransitionTo(0.1f);
             ghost.isFacing = true;
+            ghost2.isFacing = true;
             if (IsVisible2(target))
+            {
                 ghost.isSeen = true;
+                ghost2.isSeen = true;
+            }
         }
         if (ghost.isSeen == false)
         {
