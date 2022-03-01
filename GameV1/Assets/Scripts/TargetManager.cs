@@ -30,6 +30,20 @@ public class TargetManager : MonoBehaviour
 
     private bool IsVisible2(GameObject target)
     {
+        foreach (Transform t in target.transform)
+        {
+            RaycastHit hit;
+            var rayDirection = Camera.main.transform.position - t.position;
+            if (Physics.Raycast(t.position, rayDirection, out hit, Mathf.Infinity))
+            {
+                print(hit.transform.name);
+                if (hit.transform == player.transform)
+                    return true;
+            }
+        }
+        return false;
+
+
         float off = 1f;
         foreach (Transform transform in target.transform)
         {
