@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Wall
+  - Battery
   layers:
   - Default
   - TransparentFX
