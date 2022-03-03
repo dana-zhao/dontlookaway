@@ -17,15 +17,15 @@ public class CharacterMove : MonoBehaviour
     [SerializeField]
     public AudioSource sfx_PlayerObjectBump;
 
-    private const float _horizontalSpeed = 4.0f;
-    private const float _verticalSpeed = 4.0f;
+    private const float _horizontalSpeed = 1.0f;
+    private const float _verticalSpeed = 1.0f;
     //private const float _inputScale = 0.2f;
     //private const float _jumpScale = 3.0f;
     private const float _maxTiltAngle = 50.0f;
     private int objectsPickedUp = 0;
 
-    public float Speed = 4f;
-    public float JumpHeight = 2f;
+    public float Speed = 1f;
+    public float JumpHeight = 1.5f;
     private const float Gravity = -20.0f;
     //public LayerMask Ground;
 
