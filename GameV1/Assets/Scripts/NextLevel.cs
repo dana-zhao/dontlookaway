@@ -16,8 +16,10 @@ public class NextLevel : MonoBehaviour
     {
         detectionRange = 5;
         level = GameStatus.currentLevel;
-
-        if (level == "Gift_Shop"){
+        if (level == null) {
+            level = "Gift_Shop";
+        }
+        else if (level == "Gift_Shop"){
             level = "Library";
         }
     }
@@ -28,6 +30,7 @@ public class NextLevel : MonoBehaviour
         if( Vector3.Distance( player.transform.position, this.transform.position) <= detectionRange ){
             closeEnough = true;
         }
+
 
         if(closeEnough && Input.GetKeyDown(KeyCode.E)){
             SceneManager.LoadScene(level);
