@@ -186,7 +186,7 @@ public class ghostMovement : MonoBehaviour
             flipp = true;
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
-        float desiredSpeed = 1.7f * dist;
+        float desiredSpeed = dist;
 
         if (flipp && flippDelay > 0)
         {
