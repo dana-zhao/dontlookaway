@@ -28,6 +28,11 @@ public class TasksCompletion : MonoBehaviour
                 {"Key", "Key for exit"},
             }
         },
+        {"Statue", new Dictionary<string, string>
+            {
+                
+            }
+        },
     };
     private Dictionary<string, string> tasks;
 
