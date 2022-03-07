@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -339,7 +339,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentInventory: 0
   currentTasks: 0
-  currentLife: 5
   allCollect: 0
   healthbar: {fileID: 0}
 --- !u!4 &117005567
@@ -740,6 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 117005566}
+  nextLevel: Library
   player: {fileID: 940569040}
 --- !u!4 &281845841 stripped
 Transform:

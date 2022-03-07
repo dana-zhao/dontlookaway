@@ -9,6 +9,7 @@ public class NextLevel : MonoBehaviour
     private bool closeEnough;
     private float detectionRange;
     private string level;
+    public string nextLevel;
     
     public GameObject player;
     // Start is called before the first frame update
@@ -33,7 +34,7 @@ public class NextLevel : MonoBehaviour
 
 
         if(closeEnough && Input.GetKeyDown(KeyCode.E)){
-            SceneManager.LoadScene(level);
+            SceneManager.LoadScene(nextLevel);
         }
     }
 }
