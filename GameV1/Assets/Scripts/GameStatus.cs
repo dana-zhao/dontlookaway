@@ -36,6 +36,6 @@ public class GameStatus : MonoBehaviour
 
     void Start(){
         //healthbar.value = currentLife / MAXLIFE;
-        //currentLevel = SceneManager.GetActiveScene().name;
+        currentLevel = SceneManager.GetActiveScene().name;
     }
 }
