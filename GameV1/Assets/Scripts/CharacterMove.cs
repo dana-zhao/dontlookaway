@@ -123,17 +123,17 @@ public class CharacterMove : MonoBehaviour
     //}
 
     // What to do when we collide with an object marked for pickup with the "Pick Up" tag
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Pick Up"))
-        {
-            other.gameObject.SetActive(false);
-            objectsPickedUp += 1;
-            Debug.Log("Objects picked up: " + objectsPickedUp.ToString());
-        }
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.CompareTag("Pick Up"))
+    //     {
+    //         other.gameObject.SetActive(false);
+    //         objectsPickedUp += 1;
+    //         Debug.Log("Objects picked up: " + objectsPickedUp.ToString());
+    //     }
         
 
-    }
+    // }
 
     private void OnCollisionEnter(Collision collision)
     {
