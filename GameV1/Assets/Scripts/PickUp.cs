@@ -43,6 +43,7 @@ public class PickUp : MonoBehaviour
 
     bool checkItem()
     {
+        if (Vector3.Distance(transform.position, Camera.main.transform.position) < 5f) return false;
         RaycastHit hit;
         if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, detectionRange, 1 << 4))
         {

@@ -35,11 +35,8 @@ public class TargetManager : MonoBehaviour
             RaycastHit hit;
             var rayDirection = Camera.main.transform.position - t.position;
             if (Physics.Raycast(t.position, rayDirection, out hit, Mathf.Infinity))
-            {
-                print(hit.transform.name);
                 if (hit.transform == player.transform)
                     return true;
-            }
         }
         //return false;
 
