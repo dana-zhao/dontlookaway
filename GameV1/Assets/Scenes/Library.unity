@@ -1479,7 +1479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx_PlayerObjectBump: {fileID: 0}
-  Speed: 5
+  Speed: 3
   JumpHeight: 2
   camera: {fileID: 1922149295}
 --- !u!136 &208338562
