@@ -3732,6 +3732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   channelBar: {fileID: 398174958}
+  state: 0
 --- !u!65 &354867795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12768,6 +12769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   channelBar: {fileID: 398174958}
+  state: 0
 --- !u!65 &1209765403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17779,10 +17781,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3459576441525959258, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.536
       objectReference: {fileID: 0}
     - target: {fileID: 3459576441525959258, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328517439344022656, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6341535819349342674, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}

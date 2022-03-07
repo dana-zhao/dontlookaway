@@ -9,8 +9,8 @@ public class Death : MonoBehaviour
     // Start is called before the first frame update
     public GameStatus gameStatus;
 
-    private Vector3  playerinitial;
-    private Vector3  ghostinitial;
+    //private Vector3  playerinitial;
+    //private Vector3  ghostinitial;
 
 
     void Start()     
@@ -19,40 +19,41 @@ public class Death : MonoBehaviour
         // myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/Scenes");         
         // scenePaths = myLoadedAssetBundle.GetAllScenePaths();
 
-        playerinitial = Player.transform.position;
-        ghostinitial = ghost.transform.position;
+        //playerinitial = Player.transform.position;
+        //ghostinitial = ghost.transform.position;
     }       
     // Update is called once per frame
-    void OnCollisionEnter(Collision collision)
-    {   
+    //void OnCollisionEnter(Collision collision)
+    //{   
         
-        if (collision.gameObject.name == "Player")
-        {   
+        //if (collision.gameObject.name == "Player")
+        //{   
 
-            collision.gameObject.transform.position  = playerinitial;
-            ghost.transform.position = ghostinitial;  
+            //collision.gameObject.transform.position  = playerinitial;
+            //ghost.transform.position = ghostinitial;  
             
-            gameStatus.dead();
+            //gameStatus.dead();
             
-            if (gameStatus.currentLife == 0) {
-                SceneManager.LoadScene("Death"); 
-            }
-        }     
-    }      
+            //if (gameStatus.currentLife == 0) {
+                //SceneManager.LoadScene("Death"); 
+            //}
+        //}     
+    //}      
     
     void Update()     
     {         
         
         if (Vector3.Distance(Player.transform.position, ghost.transform.position) < 2.5f)         
         {           
-            Player.transform.position = playerinitial;
-            ghost.transform.position = ghostinitial;  
+            //Player.transform.position = playerinitial;
+            //ghost.transform.position = ghostinitial;  
 
-            gameStatus.dead();
+            //gameStatus.dead();
             
-            if (gameStatus.currentLife == 0) {
-                SceneManager.LoadScene("Death"); 
-            }  
+            //if (gameStatus.currentLife == 0) {
+                //SceneManager.LoadScene("Death"); 
+            //}  
+            SceneManager.LoadScene("Death"); 
         }     
     } 
 }
