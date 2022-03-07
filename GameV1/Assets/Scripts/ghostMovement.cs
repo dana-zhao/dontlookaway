@@ -39,6 +39,7 @@ public class ghostMovement : MonoBehaviour
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         gameStatus = GameObject.FindObjectOfType<GameStatus>();
         agent.autoBraking = false;
+        agent.acceleration = 177f;
 
     }
 
@@ -185,7 +186,7 @@ public class ghostMovement : MonoBehaviour
             flipp = true;
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
-        float desiredSpeed = dist * 5.0f;
+        float desiredSpeed = 1.7f * dist;
 
         if (flipp && flippDelay > 0)
         {
@@ -193,7 +194,7 @@ public class ghostMovement : MonoBehaviour
             desiredSpeed = 0f;
         }
         else if (flipp)
-            desiredSpeed = desiredSpeed / 2.57f;
+            desiredSpeed = desiredSpeed / 1.77f;
         
         if (flipp) flippMovement(desiredSpeed);
         else movement(desiredSpeed);
