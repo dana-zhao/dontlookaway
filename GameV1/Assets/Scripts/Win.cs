@@ -22,7 +22,7 @@ public class Win : MonoBehaviour
         if( Vector3.Distance( player.transform.position, this.transform.position) <= detectionRange ){
             closeEnough1 = true;
         }
-        if (closeEnough1 && script.allCollect && Input.GetKeyDown(KeyCode.E)){
+        if (closeEnough1 && script.allCollect){
             SceneManager.LoadScene("Hallway1");
         }
     }

@@ -33,7 +33,7 @@ public class NextLevel : MonoBehaviour
         }
 
 
-        if(closeEnough && Input.GetKeyDown(KeyCode.E)){
+        if(closeEnough){
             SceneManager.LoadScene(nextLevel);
         }
     }
