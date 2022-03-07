@@ -18,11 +18,8 @@ public class Win : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
-        if( Vector3.Distance( player.transform.position, this.transform.position) <= detectionRange ){
-            closeEnough1 = true;
-        }
-        if (closeEnough1 && script.allCollect){
+        if (script.allCollect && Vector3.Distance(player.transform.position, this.transform.position) <= detectionRange)
+        {
             SceneManager.LoadScene("Hallway1");
         }
     }
