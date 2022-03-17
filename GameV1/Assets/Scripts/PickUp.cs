@@ -16,7 +16,10 @@ public class PickUp : MonoBehaviour
     public bool isTut = false;
 
     [SerializeField] public AudioSource sfx_CrystalSfxPickUp;
- 
+
+    [SerializeField]
+    private AK.Wwise.Event CrystalPickUp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +89,7 @@ public class PickUp : MonoBehaviour
         }
         if (closeEnough && Input.GetKeyDown(KeyCode.E)){
             sfx_CrystalSfxPickUp.Play();
+            CrystalPickUp.Post(gameObject);
             this.gameObject.SetActive(false);
             _TasksCompletion.TaskComplete(this.gameObject.name);
 
