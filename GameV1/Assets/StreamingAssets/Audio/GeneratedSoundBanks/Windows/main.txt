@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3943406705	CrystalPickUp			\Default Work Unit\CrystalPickUp	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CrystalPickUp_2		34280
+
