@@ -21,7 +21,6 @@ public class TasksCompletion : MonoBehaviour
                 {"Blue crystal", "Blue Crystal 1"},
                 {"Blue crystal (1)", "Blue Crystal 2"},
                 {"Blue crystal (2)", "Blue Crystal 3"},
-                {"Blue crystal (3)", "Blue Crystal 4"},
                 {"Battery", "Battery for flashlight"},
                 {"Key", "Key for exit"},
             }
