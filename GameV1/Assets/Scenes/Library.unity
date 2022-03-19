@@ -1414,6 +1414,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 688432707}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &207671234
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1441,6 +1445,7 @@ GameObject:
   - component: {fileID: 208338562}
   - component: {fileID: 208338561}
   - component: {fileID: 208338560}
+  - component: {fileID: 208338566}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1562,6 +1567,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -206.313, z: 0}
+--- !u!114 &208338566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208338559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb2feba0a67e5842a017a91ce98c493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a553bcce31d94ad46b390b3968658a50, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &217302583
 GameObject:
   m_ObjectHideFlags: 0
@@ -11479,6 +11508,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 688432707}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1157382818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14315,6 +14348,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 688432707}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1396025841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16502,6 +16539,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 688432707}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1597120262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19281,6 +19322,7 @@ GameObject:
   - component: {fileID: 1922149296}
   - component: {fileID: 1922149301}
   - component: {fileID: 1922149300}
+  - component: {fileID: 1922149302}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -19443,6 +19485,35 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &1922149302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922149295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e65cce76c304ce42be7936e718d9d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 00dca6d9dd4148d428b0192b4dd0d53b, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &1945467203
 GameObject:
   m_ObjectHideFlags: 0
@@ -20218,6 +20289,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 2118531126}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &2052570865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21139,6 +21214,10 @@ MonoBehaviour:
   Objective: {fileID: 444695375}
   isTut: 0
   sfx_CrystalSfxPickUp: {fileID: 2123881799}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!23 &4108173950845418568
 MeshRenderer:
   m_ObjectHideFlags: 0
