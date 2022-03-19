@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b6c286c0779a4048b93d6db986a1fced
     GuidInternal: 
-    m_lastTime: -8585541272191024642
+    m_lastTime: -8585538983954445005
     List:
+    - name: GiftShop
+      guid: 79a327ebe0e5614cbbead48523ced1f2
+      id: 4135210879
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b6c286c0779a4048b93d6db986a1fced
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: GiftShop
+        ObjectType: 1
+        guid: 79a327ebe0e5614cbbead48523ced1f2
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 350a3f5c2da8b14e9b32586ea2d8a9c3
     GuidInternal: 
-    m_lastTime: -8585541223143292560
+    m_lastTime: -8585538977828721561
     List:
     - name: main
       guid: 62eaee3f5b63754f92d66e78c6ded703
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c195e216c6e300469118a271a9cd8058
     GuidInternal: 
-    m_lastTime: -8585541223505419024
+    m_lastTime: -8585538954048951310
     List:
     - name: CrystalPickUp
       guid: f882455631b71d4b96d1310d38c4ceba
@@ -113,6 +130,91 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.177875
       minDuration: 0.177875
+    - name: FootstepLoop
+      guid: ea1e6c597e4ea54dbcb27800dd2b9d81
+      id: 2429995097
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: FootstepLoop
+        ObjectType: 3
+        guid: ea1e6c597e4ea54dbcb27800dd2b9d81
+      Path: Events\Default Work Unit\FootstepLoop
+      maxAttenuation: 0
+      maxDuration: 0.105771
+      minDuration: 0.105771
+    - name: GiftShopBGM
+      guid: 0a34c80ddc1d644e9959ba9f4a0acdd8
+      id: 1369225059
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: GiftShopBGM
+        ObjectType: 3
+        guid: 0a34c80ddc1d644e9959ba9f4a0acdd8
+      Path: Events\Default Work Unit\GiftShopBGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LibraryBGM
+      guid: 537e06a69cabbf4a9e5d5bf324fc4268
+      id: 793810216
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: LibraryBGM
+        ObjectType: 3
+        guid: 537e06a69cabbf4a9e5d5bf324fc4268
+      Path: Events\Default Work Unit\LibraryBGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainHallBGM
+      guid: fb7eedb919d4f344b3f1feb9656e55f3
+      id: 11707695
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: MainHallBGM
+        ObjectType: 3
+        guid: fb7eedb919d4f344b3f1feb9656e55f3
+      Path: Events\Default Work Unit\MainHallBGM
+      maxAttenuation: 0
+      maxDuration: 90.216354
+      minDuration: 90.216354
+    - name: TorchLoop
+      guid: 90e5e7fcfadc97459caed47e98677644
+      id: 4171534483
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: TorchLoop
+        ObjectType: 3
+        guid: 90e5e7fcfadc97459caed47e98677644
+      Path: Events\Default Work Unit\TorchLoop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +272,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000a0000000b000000
+  ExpandedWaapiItemIds: 030000000400000005000000060000004b0000004c0000005b0000005c0000005f000000600000006a0000006b000000a2000000a3000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

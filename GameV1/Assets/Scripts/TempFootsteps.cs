@@ -6,7 +6,7 @@ public class TempFootsteps : MonoBehaviour
 {
     public float stepRate = 0.9f;
     public float stepCoolDown;
-    public AudioSource sfx_TempFootStep;
+    public AK.Wwise.Event footstepLoop;
 
 
     // Update is called once per frame
@@ -15,8 +15,7 @@ public class TempFootsteps : MonoBehaviour
         stepCoolDown -= Time.deltaTime;
         if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && stepCoolDown < 0f)
         {
-            sfx_TempFootStep.pitch = 1f + Random.Range(-0.2f, 0.2f);
-            sfx_TempFootStep.Play();
+            footstepLoop.Post(gameObject);
             stepCoolDown = stepRate;
         }
     }

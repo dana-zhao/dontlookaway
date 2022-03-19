@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4b3d4d3404a8f43beb7a81394c7b45, type: 3}
+  m_Name: EB27A379-E5E0-4C61-BBEA-D48523CED1F2
+  m_EditorClassIdentifier: 
+  objectName: GiftShop
+  id: 4135210879
+  guid: EB27A379-E5E0-4C61-BBEA-D48523CED1F2
