@@ -11,12 +11,15 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2754342975">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1828373697">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1554191569">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2705534578">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -29,7 +32,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2429995097" Name="FootstepLoop" ObjectPath="\Events\Default Work Unit\FootstepLoop" DurationType="Infinite"/>
+				<Event Id="1369225059" Name="GiftShopBGM" ObjectPath="\Events\Default Work Unit\GiftShopBGM" DurationType="Infinite"/>
+				<Event Id="793810216" Name="LibraryBGM" ObjectPath="\Events\Default Work Unit\LibraryBGM" DurationType="Infinite"/>
+				<Event Id="11707695" Name="MainHallBGM" ObjectPath="\Events\Default Work Unit\MainHallBGM" DurationType="OneShot" DurationMin="90.216354" DurationMax="90.216354">
+					<IncludedMemoryFiles>
+						<File Id="338983936" Language="SFX">
+							<ShortName>mus_MainHallBGM.wav</ShortName>
+							<Path>SFX\mus_MainHallBGM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4171534483" Name="TorchLoop" ObjectPath="\Events\Default Work Unit\TorchLoop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="40509159" Language="SFX">
+							<ShortName>sfx_Torch_1.wav</ShortName>
+							<Path>SFX\sfx_Torch_1_1CFE99BD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<IncludedAuxBusses>
+				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+			</IncludedAuxBusses>
+			<IncludedMemoryFiles>
+				<File Id="6411874" Language="SFX">
+					<ShortName>sfx_footstepLoop.wav</ShortName>
+					<Path>SFX\sfx_footstepLoop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="40509159" Language="SFX">
+					<ShortName>sfx_Torch_1.wav</ShortName>
+					<Path>SFX\sfx_Torch_1_1CFE99BD.wem</Path>
+				</File>
+				<File Id="97578855" Language="SFX">
+					<ShortName>sfx_CrystalPickUp_2.wav</ShortName>
+					<Path>SFX\sfx_CrystalPickUp_2_10C4C929.wem</Path>
+				</File>
+				<File Id="336414517" Language="SFX">
+					<ShortName>mus_GiftShopBGM.wav</ShortName>
+					<Path>SFX\mus_GiftShopBGM_D79FB2B7.wem</Path>
+				</File>
+				<File Id="338983936" Language="SFX">
+					<ShortName>mus_MainHallBGM.wav</ShortName>
+					<Path>SFX\mus_MainHallBGM_10C4C929.wem</Path>
+				</File>
+				<File Id="978482577" Language="SFX">
+					<ShortName>mus_LibraryBGM.wav</ShortName>
+					<Path>SFX\mus_LibraryBGM_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

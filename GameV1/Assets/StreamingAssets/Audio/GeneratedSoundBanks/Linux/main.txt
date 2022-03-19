@@ -1,6 +1,25 @@
 Event	ID	Name			Wwise Object Path	Notes
+	11707695	MainHallBGM			\Default Work Unit\MainHallBGM	
+	793810216	LibraryBGM			\Default Work Unit\LibraryBGM	
+	1369225059	GiftShopBGM			\Default Work Unit\GiftShopBGM	
+	2429995097	FootstepLoop			\Default Work Unit\FootstepLoop	
 	3943406705	CrystalPickUp			\Default Work Unit\CrystalPickUp	
+	4171534483	TorchLoop			\Default Work Unit\TorchLoop	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	4135210879	GiftShop			\Default Work Unit\Master Audio Bus\GiftShop	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2513915904	Hall_Large	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sfx_CrystalPickUp_2		34280
+	6411874	sfx_footstepLoop	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_footstepLoop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoop		20436
+	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_Torch_1_1CFE99BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		978588
+	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_CrystalPickUp_2		34280
+	336414517	mus_GiftShopBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_GiftShopBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_GiftShopBGM		25256436
+	338983936	mus_MainHallBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_MainHallBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_MainHallBGM		17321668
+	978482577	mus_LibraryBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_LibraryBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_LibraryBGM		16761360
 
