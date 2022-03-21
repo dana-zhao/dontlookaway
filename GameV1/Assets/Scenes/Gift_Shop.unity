@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 30697216}
   - component: {fileID: 30697217}
   - component: {fileID: 30697218}
+  - component: {fileID: 30697219}
   m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
@@ -353,6 +354,26 @@ MonoBehaviour:
   maxBrightness: 2
   minBrightness: 0.2
   drainRate: 2
+--- !u!114 &30697219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30697215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &37846052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f40650c1a8b561741a641f691f7c2cc9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1983,7 +2004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0011206cbb93be14dbdcc22a4850f774, type: 2}
+  - {fileID: 2100000, guid: b07ad230873f910479f672b905c9fe06, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3971,6 +3992,10 @@ PrefabInstance:
       propertyPath: script
       value: 
       objectReference: {fileID: 23745689}
+    - target: {fileID: 3805234342028383034, guid: 11ea51b277f0c4141be3411278131b5e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 831294a8d68bb6a4aa8468956bf58d2e, type: 2}
     - target: {fileID: 5324581880888846576, guid: 11ea51b277f0c4141be3411278131b5e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -5236,7 +5261,7 @@ PrefabInstance:
     - target: {fileID: -7635826562936255635, guid: 9051cadeb607ac24e98aad809d1ed77f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5acd15f21743af44e94b2ae144cb2e19, type: 2}
+      objectReference: {fileID: 2100000, guid: 7a9af37c8ec188447b51a55392a31cd0, type: 2}
     - target: {fileID: 919132149155446097, guid: 9051cadeb607ac24e98aad809d1ed77f, type: 3}
       propertyPath: m_Name
       value: Monster
