@@ -829,7 +829,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentInventory: 0
   currentTasks: 0
-  currentLife: 5
   allCollect: 0
   healthbar: {fileID: 6351213956489538992}
 --- !u!1 &2678198788578828587
