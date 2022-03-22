@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b6c286c0779a4048b93d6db986a1fced
     GuidInternal: 
-    m_lastTime: -8585538983954445005
+    m_lastTime: -8585536754253324411
     List:
     - name: GiftShop
       guid: 79a327ebe0e5614cbbead48523ced1f2
@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 350a3f5c2da8b14e9b32586ea2d8a9c3
     GuidInternal: 
-    m_lastTime: -8585538977828721561
+    m_lastTime: -8585536709629854521
     List:
     - name: main
       guid: 62eaee3f5b63754f92d66e78c6ded703
@@ -111,8 +111,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c195e216c6e300469118a271a9cd8058
     GuidInternal: 
-    m_lastTime: -8585538954048951310
+    m_lastTime: -8585536686505784399
     List:
+    - name: BatteryPickup
+      guid: b628176ae679ca4dae03e4a466624578
+      id: 934648088
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: BatteryPickup
+        ObjectType: 3
+        guid: b628176ae679ca4dae03e4a466624578
+      Path: Events\Default Work Unit\BatteryPickup
+      maxAttenuation: 0
+      maxDuration: 0.269229
+      minDuration: 0.269229
+    - name: ConditionFlip
+      guid: e1226cf90170cd4abf4e210dcc066fba
+      id: 3475515249
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: ConditionFlip
+        ObjectType: 3
+        guid: e1226cf90170cd4abf4e210dcc066fba
+      Path: Events\Default Work Unit\ConditionFlip
+      maxAttenuation: 0
+      maxDuration: 7.682687
+      minDuration: 7.682687
     - name: CrystalPickUp
       guid: f882455631b71d4b96d1310d38c4ceba
       id: 3943406705
@@ -128,8 +162,25 @@ MonoBehaviour:
         guid: f882455631b71d4b96d1310d38c4ceba
       Path: Events\Default Work Unit\CrystalPickUp
       maxAttenuation: 0
-      maxDuration: 0.177875
-      minDuration: 0.177875
+      maxDuration: 0.197023
+      minDuration: 0.156016
+    - name: Death
+      guid: 4c95a7cbb43ad74992699207676d0e0e
+      id: 779278001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: Death
+        ObjectType: 3
+        guid: 4c95a7cbb43ad74992699207676d0e0e
+      Path: Events\Default Work Unit\Death
+      maxAttenuation: 0
+      maxDuration: 1.591354
+      minDuration: 1.591354
     - name: FootstepLoop
       guid: ea1e6c597e4ea54dbcb27800dd2b9d81
       id: 2429995097
@@ -145,8 +196,42 @@ MonoBehaviour:
         guid: ea1e6c597e4ea54dbcb27800dd2b9d81
       Path: Events\Default Work Unit\FootstepLoop
       maxAttenuation: 0
-      maxDuration: 0.105771
-      minDuration: 0.105771
+      maxDuration: 0.124195
+      minDuration: 0.07901
+    - name: FootstepLoopHall
+      guid: 960cfb805ac6c144a369bd2b226f217f
+      id: 2400612304
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: FootstepLoopHall
+        ObjectType: 3
+        guid: 960cfb805ac6c144a369bd2b226f217f
+      Path: Events\Default Work Unit\FootstepLoopHall
+      maxAttenuation: 0
+      maxDuration: 0.124195
+      minDuration: 0.07901
+    - name: GhostIdle1
+      guid: ecb692cec3dc084a9f7e89ea0047598c
+      id: 1935768893
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: GhostIdle1
+        ObjectType: 3
+        guid: ecb692cec3dc084a9f7e89ea0047598c
+      Path: Events\Default Work Unit\GhostIdle1
+      maxAttenuation: 21
+      maxDuration: -1
+      minDuration: -1
     - name: GiftShopBGM
       guid: 0a34c80ddc1d644e9959ba9f4a0acdd8
       id: 1369225059
@@ -164,6 +249,74 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Jump
+      guid: e7f89f97da7da54390631fb8d7477318
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: Jump
+        ObjectType: 3
+        guid: e7f89f97da7da54390631fb8d7477318
+      Path: Events\Default Work Unit\Jump
+      maxAttenuation: 0
+      maxDuration: 0.308895
+      minDuration: 0.248162
+    - name: JumpLand
+      guid: 3dbcceed15464f4c89a23472079a09b5
+      id: 1548130050
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: JumpLand
+        ObjectType: 3
+        guid: 3dbcceed15464f4c89a23472079a09b5
+      Path: Events\Default Work Unit\JumpLand
+      maxAttenuation: 0
+      maxDuration: 0.879011
+      minDuration: 0.845907
+    - name: KeyPickup
+      guid: 9f56713c642cba45ab13e5aa23516b32
+      id: 1616845350
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: KeyPickup
+        ObjectType: 3
+        guid: 9f56713c642cba45ab13e5aa23516b32
+      Path: Events\Default Work Unit\KeyPickup
+      maxAttenuation: 0
+      maxDuration: 0.221146
+      minDuration: 0.221146
+    - name: LevelStart
+      guid: 12033ad26c4fd747b95d706104151a6d
+      id: 3372421815
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: LevelStart
+        ObjectType: 3
+        guid: 12033ad26c4fd747b95d706104151a6d
+      Path: Events\Default Work Unit\LevelStart
+      maxAttenuation: 0
+      maxDuration: 10.0625
+      minDuration: 10.0625
     - name: LibraryBGM
       guid: 537e06a69cabbf4a9e5d5bf324fc4268
       id: 793810216
@@ -198,6 +351,57 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 90.216354
       minDuration: 90.216354
+    - name: MusicFlipp
+      guid: 9689b1477dbbac46a123a8e810861b7f
+      id: 738973617
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: MusicFlipp
+        ObjectType: 3
+        guid: 9689b1477dbbac46a123a8e810861b7f
+      Path: Events\Default Work Unit\MusicFlipp
+      maxAttenuation: 0
+      maxDuration: 27.6875
+      minDuration: 27.6875
+    - name: RoomTone1
+      guid: 3130d6460dfac04aa766ae3271e53c5c
+      id: 2410724393
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: RoomTone1
+        ObjectType: 3
+        guid: 3130d6460dfac04aa766ae3271e53c5c
+      Path: Events\Default Work Unit\RoomTone1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopFootsteps
+      guid: 41e0519d8491bf4ca503ac72b574d077
+      id: 177027278
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: StopFootsteps
+        ObjectType: 3
+        guid: 41e0519d8491bf4ca503ac72b574d077
+      Path: Events\Default Work Unit\StopFootsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TorchLoop
       guid: 90e5e7fcfadc97459caed47e98677644
       id: 4171534483
@@ -241,8 +445,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 0a245e48fa8ea74d91a10084bd94212b
     GuidInternal: 
-    m_lastTime: -8585541272190864494
-    List: []
+    m_lastTime: -8585536684078354241
+    List:
+    - name: States
+      guid: 7527c47997306a48aadd6575e9790c86
+      id: 1208172739
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0a245e48fa8ea74d91a10084bd94212b
+      - ElementName: States
+        ObjectType: 9
+        guid: 7527c47997306a48aadd6575e9790c86
+      Path: States\Default Work Unit\States
+      values:
+      - name: MonsterFlippy
+        guid: 3c46ee3d7df6504eae6423c1d4ab09b4
+        id: 410764645
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a245e48fa8ea74d91a10084bd94212b
+        - ElementName: States
+          ObjectType: 9
+          guid: 7527c47997306a48aadd6575e9790c86
+        - ElementName: MonsterFlippy
+          ObjectType: 8
+          guid: 3c46ee3d7df6504eae6423c1d4ab09b4
+      - name: MonsterHappy
+        guid: 50b40c4f54cfa6438662d555613c6fc6
+        id: 1097930397
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a245e48fa8ea74d91a10084bd94212b
+        - ElementName: States
+          ObjectType: 9
+          guid: 7527c47997306a48aadd6575e9790c86
+        - ElementName: MonsterHappy
+          ObjectType: 8
+          guid: 50b40c4f54cfa6438662d555613c6fc6
+      - name: None
+        guid: 39f35cdb3bfb0044b924e8235ea893bf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0a245e48fa8ea74d91a10084bd94212b
+        - ElementName: States
+          ObjectType: 9
+          guid: 7527c47997306a48aadd6575e9790c86
+        - ElementName: None
+          ObjectType: 8
+          guid: 39f35cdb3bfb0044b924e8235ea893bf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -272,7 +542,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 030000000400000005000000060000004b0000004c0000005b0000005c0000005f000000600000006a0000006b000000a2000000a3000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000005000000051000000c4000000c5000000e0000000e1000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

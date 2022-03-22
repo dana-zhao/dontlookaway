@@ -18,19 +18,24 @@ public class GameStatus : MonoBehaviour
     public void collect() {
         currentInventory ++ ;
         allCollect = currentInventory == currentTasks;
+
     }
 
     public void newTask(){
         currentTasks ++; 
     }
 
+
+
     //public void dead() {
-        //currentLife --;
-        //healthbar.value = (float)currentLife / MAXLIFE;
+    //currentLife --;
+    //healthbar.value = (float)currentLife / MAXLIFE;
     //}
 
     public bool allCollected(){
+        
         return allCollect;
+        
     }
 
 
