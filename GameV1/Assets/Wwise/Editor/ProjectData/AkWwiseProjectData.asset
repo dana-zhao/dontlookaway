@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c195e216c6e300469118a271a9cd8058
     GuidInternal: 
-    m_lastTime: -8585536686505784399
+    m_lastTime: -8585536403569665577
     List:
     - name: BatteryPickup
       guid: b628176ae679ca4dae03e4a466624578
@@ -179,8 +179,8 @@ MonoBehaviour:
         guid: 4c95a7cbb43ad74992699207676d0e0e
       Path: Events\Default Work Unit\Death
       maxAttenuation: 0
-      maxDuration: 1.591354
-      minDuration: 1.591354
+      maxDuration: 4.246907
+      minDuration: 4.006232
     - name: FootstepLoop
       guid: ea1e6c597e4ea54dbcb27800dd2b9d81
       id: 2429995097
@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: ea1e6c597e4ea54dbcb27800dd2b9d81
       Path: Events\Default Work Unit\FootstepLoop
       maxAttenuation: 0
-      maxDuration: 0.124195
-      minDuration: 0.07901
+      maxDuration: 0.357313
+      minDuration: 0.25091
     - name: FootstepLoopHall
       guid: 960cfb805ac6c144a369bd2b226f217f
       id: 2400612304
@@ -213,8 +213,25 @@ MonoBehaviour:
         guid: 960cfb805ac6c144a369bd2b226f217f
       Path: Events\Default Work Unit\FootstepLoopHall
       maxAttenuation: 0
-      maxDuration: 0.124195
-      minDuration: 0.07901
+      maxDuration: 0.357313
+      minDuration: 0.25091
+    - name: GhostCloser
+      guid: 2cf183b991b6ee418804d1fd6904cd76
+      id: 2619949524
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: GhostCloser
+        ObjectType: 3
+        guid: 2cf183b991b6ee418804d1fd6904cd76
+      Path: Events\Default Work Unit\GhostCloser
+      maxAttenuation: 10
+      maxDuration: -1
+      minDuration: -1
     - name: GhostIdle1
       guid: ecb692cec3dc084a9f7e89ea0047598c
       id: 1935768893
@@ -366,8 +383,42 @@ MonoBehaviour:
         guid: 9689b1477dbbac46a123a8e810861b7f
       Path: Events\Default Work Unit\MusicFlipp
       maxAttenuation: 0
-      maxDuration: 27.6875
-      minDuration: 27.6875
+      maxDuration: -1
+      minDuration: -1
+    - name: PauseFootsteps
+      guid: 0c77a43bc1a5b8459fd68ceb0fcd6a92
+      id: 2271933638
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: PauseFootsteps
+        ObjectType: 3
+        guid: 0c77a43bc1a5b8459fd68ceb0fcd6a92
+      Path: Events\Default Work Unit\PauseFootsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ResumeFootsteps
+      guid: e2fad933f5bf114098163b8daa5e41c0
+      id: 681389337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: ResumeFootsteps
+        ObjectType: 3
+        guid: e2fad933f5bf114098163b8daa5e41c0
+      Path: Events\Default Work Unit\ResumeFootsteps
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: RoomTone1
       guid: 3130d6460dfac04aa766ae3271e53c5c
       id: 2410724393
@@ -542,7 +593,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000005000000051000000c4000000c5000000e0000000e1000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000001e0000001f0000005000000051000000890000008a000000c4000000c5000000e0000000e1000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

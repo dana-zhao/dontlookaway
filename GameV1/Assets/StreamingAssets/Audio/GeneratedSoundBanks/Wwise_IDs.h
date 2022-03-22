@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FOOTSTEPLOOP = 2429995097U;
         static const AkUniqueID FOOTSTEPLOOPHALL = 2400612304U;
+        static const AkUniqueID GHOSTCLOSER = 2619949524U;
         static const AkUniqueID GHOSTIDLE1 = 1935768893U;
         static const AkUniqueID GIFTSHOPBGM = 1369225059U;
         static const AkUniqueID JUMP = 3833651337U;
@@ -28,6 +29,8 @@ namespace AK
         static const AkUniqueID LIBRARYBGM = 793810216U;
         static const AkUniqueID MAINHALLBGM = 11707695U;
         static const AkUniqueID MUSICFLIPP = 738973617U;
+        static const AkUniqueID PAUSEFOOTSTEPS = 2271933638U;
+        static const AkUniqueID RESUMEFOOTSTEPS = 681389337U;
         static const AkUniqueID ROOMTONE1 = 2410724393U;
         static const AkUniqueID STOPFOOTSTEPS = 177027278U;
         static const AkUniqueID TORCHLOOP = 4171534483U;

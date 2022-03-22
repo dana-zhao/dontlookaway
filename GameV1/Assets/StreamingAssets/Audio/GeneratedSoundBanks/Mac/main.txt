@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	11707695	MainHallBGM			\Default Work Unit\MainHallBGM	
 	177027278	StopFootsteps			\Default Work Unit\StopFootsteps	
+	681389337	ResumeFootsteps			\Default Work Unit\ResumeFootsteps	
 	738973617	MusicFlipp			\Default Work Unit\MusicFlipp	
 	779278001	Death			\Default Work Unit\Death	
 	793810216	LibraryBGM			\Default Work Unit\LibraryBGM	
@@ -9,9 +10,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1548130050	JumpLand			\Default Work Unit\JumpLand	
 	1616845350	KeyPickup			\Default Work Unit\KeyPickup	
 	1935768893	GhostIdle1			\Default Work Unit\GhostIdle1	
+	2271933638	PauseFootsteps			\Default Work Unit\PauseFootsteps	
 	2400612304	FootstepLoopHall			\Default Work Unit\FootstepLoopHall	
 	2410724393	RoomTone1			\Default Work Unit\RoomTone1	
 	2429995097	FootstepLoop			\Default Work Unit\FootstepLoop	
+	2619949524	GhostCloser			\Default Work Unit\GhostCloser	
 	3372421815	LevelStart			\Default Work Unit\LevelStart	
 	3475515249	ConditionFlip			\Default Work Unit\ConditionFlip	
 	3833651337	Jump			\Default Work Unit\Jump	
@@ -47,24 +50,29 @@ Effect plug-ins	ID	Name	Type				Notes
 	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	2135908	sfx_GhostIdle_1_3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_GhostIdle_1.3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_GhostIdle_1_3		4854588
-	6411874	sfx_footstepLoop	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_footstepLoop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoop		20436
-	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_Torch_1_A3BC1C6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		950308
+	2135908	sfx_GhostIdle_1_3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_GhostIdle_1.3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Ghost\sfx_GhostIdle_1_3		4854588
+	6411874	sfx_footstepLoopHall	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_footstepLoop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoopHall		20436
+	14623319	sfx_ghostCloser	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_ghostCloser_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Ghost\sfx_ghostCloser		4848128
+	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_Torch_1_F69107AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		950308
+	84616786	sfx_newFoostep_3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_newFoostep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_foostepBlend\sfx_newFootstepRandom\sfx_newFoostep_3		51820
 	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_CrystalPickUp_2		34280
-	161785269	sfx_KnifeStab_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_KnifeStab_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_KnifeStab_1		305668
+	161785269	sfx_KnifeStab_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_KnifeStab_1_61E990AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_Death\sfx_KnifeStab_1		106980
+	240635430	sfx_newFoostep_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_newFoostep_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_foostepBlend\sfx_newFootstepRandom\sfx_newFoostep_2		60128
 	289916624	mus_LowBeatLoop_v_03	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_LowBeatLoop_v.03_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_LowBeatLoop_v_03		5316128
 	336414517	mus_GiftShopBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_GiftShopBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_GiftShopBGM		25256436
 	338983936	mus_MainHallBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_MainHallBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_MainHallBGM		17321668
-	347964455	sfx_Jump	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_85181DB2.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Jump		21948
-	356696703	426767__cmilan__apartment-room-tone	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\426767__cmilan__apartment-room-tone_09C5D755.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\426767__cmilan__apartment-room-tone		3860416
+	347964455	sfx_Jump	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_46C5EF0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Jump		21948
+	356696703	426767__cmilan__apartment-room-tone	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\426767__cmilan__apartment-room-tone_F58BFE57.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\426767__cmilan__apartment-room-tone		3860416
 	385304002	mus_BrassTapeLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_BrassTapeLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_BrassTapeLoop_v_04		2127820
 	658321127	sfx_ConditionFlipBassHit	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_ConditionFlipBassHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlipBassHit		1427204
+	709223425	sfx_DeathSlobber	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\339191__shillsuqat__chewing-zombie-wav_661EC19B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_Death\sfx_DeathSlobber		64238
 	717207791	422869__ipaddeh__jump-landing-wood-02	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\422869__ipaddeh__jump-landing-wood-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\422869__ipaddeh__jump-landing-wood-02		184676
-	785133605	sfx_Land	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_C3933FC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Land		13262
+	785133605	sfx_Land	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_7F483FAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Land		13262
 	817937983	sfx_ConditionFlip	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_ConditionFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlip		1042280
 	863462924	mus_StringChatterLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_StringChatterLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_StringChatterLoop_v_04		4477052
 	879034394	sfx_BatteryPickup1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_BatteryPickup1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_BatteryPickup1		51820
 	884343402	sfx_KeyPickUp_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_KeyPickUp_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_KeyPickUp_1		42588
+	926713740	sfx_DeathGrowl	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\416044__giddster__monster-growl-10_06D781D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_Death\sfx_DeathGrowl		187352
 	960818493	sfx_LevelStart	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\sfx_LevelStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_LevelStart		1932128
 	978482577	mus_LibraryBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Mac\SFX\mus_LibraryBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_LibraryBGM		16761360
 

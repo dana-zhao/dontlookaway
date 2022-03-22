@@ -79,7 +79,15 @@ public class CharacterMove : MonoBehaviour
             _velocity.y += Mathf.Sqrt(JumpHeight * -2.0f * Gravity);
             AkSoundEngine.PostEvent("Jump", gameObject);
             AkSoundEngine.PostEvent("JumpLand", gameObject);
-            AkSoundEngine.PostEvent("StopFootsteps",gameObject);
+            
+        }
+        if (_isGrounded == true)
+        {
+            AkSoundEngine.PostEvent("ResumeFootsteps", gameObject);
+        }
+        if (_isGrounded == false)
+        {
+            AkSoundEngine.PostEvent("PauseFootsteps", gameObject);
         }
 
 
