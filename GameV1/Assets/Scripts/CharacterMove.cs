@@ -37,6 +37,9 @@ public class CharacterMove : MonoBehaviour
     //private Rigidbody _rigidbody;
     private Transform _transform;
     public GameObject camera;
+
+    //footstep sound
+    public AK.Wwise.Event footstepLoop;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +77,11 @@ public class CharacterMove : MonoBehaviour
         if (Input.GetButtonDown("Jump") && _isGrounded)
         {
             _velocity.y += Mathf.Sqrt(JumpHeight * -2.0f * Gravity);
+            AkSoundEngine.PostEvent("Jump", gameObject);
+            AkSoundEngine.PostEvent("JumpLand", gameObject);
+            AkSoundEngine.PostEvent("StopFootsteps",gameObject);
         }
+
 
 
         _velocity.y += Gravity * Time.deltaTime;

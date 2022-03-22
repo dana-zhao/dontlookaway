@@ -34,6 +34,7 @@ public class NextLevel : MonoBehaviour
 
 
         if(closeEnough){
+            AkSoundEngine.StopAll();
             SceneManager.LoadScene(nextLevel);
         }
     }

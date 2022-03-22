@@ -85,6 +85,7 @@ public class TasksCompletion : MonoBehaviour
         simpleGameObject[taskname].GetComponent<Toggle>().isOn = true;
         complexGameObject[taskname].transform.SetParent(Inventory.transform, false);
         gameStatus.collect();
+        
 
     }
 
