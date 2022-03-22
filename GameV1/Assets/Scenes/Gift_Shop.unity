@@ -1920,6 +1920,7 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
   isTut: 1
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1647494667}
   CrystalPickUp:
     idInternal: 0
@@ -2416,6 +2417,7 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
   isTut: 1
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
   CrystalPickUp:
     idInternal: 0
@@ -2858,6 +2860,7 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
   isTut: 1
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
   CrystalPickUp:
     idInternal: 0
@@ -3753,6 +3756,7 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
   isTut: 1
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
   CrystalPickUp:
     idInternal: 0
@@ -4463,6 +4467,7 @@ MonoBehaviour:
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
   Objective: {fileID: 1236343954}
   isTut: 1
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
   CrystalPickUp:
     idInternal: 0

@@ -14,6 +14,9 @@ public class PickUp : MonoBehaviour
     private bool tutDisplayed = false;
     public GameObject Objective;
     public bool isTut = false;
+    public GameObject GameStatus;
+    private GameStatus gameStatus;
+
 
     [SerializeField] public AudioSource sfx_CrystalSfxPickUp;
 
@@ -23,6 +26,7 @@ public class PickUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameStatus = GameObject.FindObjectOfType<GameStatus>();
         _TasksCompletion = GameObject.FindObjectOfType<TasksCompletion>();
         // Our light
         our_light = GameObject.FindObjectOfType<Flashlight>();
@@ -33,6 +37,7 @@ public class PickUp : MonoBehaviour
         detectionRange = 5;
         if (player == null)
              player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     void ShowFloatingText()
@@ -99,5 +104,10 @@ public class PickUp : MonoBehaviour
                 our_light.ReplaceBattery(amount);
             }
         }
+        if (gameStatus.allCollected())
+        {
+            AkSoundEngine.PostEvent("ConditionFlip",gameObject);
+        }
+        
     }
 }
