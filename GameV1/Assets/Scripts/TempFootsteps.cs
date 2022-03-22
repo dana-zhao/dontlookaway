@@ -12,7 +12,7 @@ public class TempFootsteps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        stepCoolDown -= Time.deltaTime;
+        stepCoolDown -= Time.deltaTime / 1.2f;
         if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && stepCoolDown < 0f)
         {
             footstepLoop.Post(gameObject);

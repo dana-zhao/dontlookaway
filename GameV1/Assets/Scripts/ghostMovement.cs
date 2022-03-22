@@ -180,10 +180,17 @@ public class ghostMovement : MonoBehaviour
         {
             Debug.Log("Monster condition flipped!");
             flipp = !flipp;
+            
         }
 
         if (gameStatus.allCollected())
+        {
             flipp = true;
+            AkSoundEngine.SetState("States", "MonsterFlippy");
+        }
+
+            
+            
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
         float desiredSpeed = dist;
@@ -192,11 +199,14 @@ public class ghostMovement : MonoBehaviour
         {
             flippDelay -= Time.deltaTime;
             desiredSpeed = 0f;
+            
         }
         else if (flipp)
             desiredSpeed = desiredSpeed / 1.77f;
-        
+
         if (flipp) flippMovement(desiredSpeed);
+
+
         else movement(desiredSpeed);
     }
 }

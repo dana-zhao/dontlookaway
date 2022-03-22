@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4061629199">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2926741057">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -19,22 +19,128 @@
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2705534578">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3063348920">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3943406705" Name="CrystalPickUp" ObjectPath="\Events\Default Work Unit\CrystalPickUp" DurationType="OneShot" DurationMin="0.177875" DurationMax="0.177875">
+				<Event Id="934648088" Name="BatteryPickup" ObjectPath="\Events\Default Work Unit\BatteryPickup" DurationType="OneShot" DurationMin="0.269229" DurationMax="0.269229">
+					<IncludedMemoryFiles>
+						<File Id="879034394" Language="SFX">
+							<ShortName>sfx_BatteryPickup1.wav</ShortName>
+							<Path>SFX\sfx_BatteryPickup1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3475515249" Name="ConditionFlip" ObjectPath="\Events\Default Work Unit\ConditionFlip" DurationType="OneShot" DurationMin="7.682687" DurationMax="7.682687"/>
+				<Event Id="3943406705" Name="CrystalPickUp" ObjectPath="\Events\Default Work Unit\CrystalPickUp" DurationType="OneShot" DurationMin="0.156016" DurationMax="0.197023">
 					<IncludedMemoryFiles>
 						<File Id="97578855" Language="SFX">
 							<ShortName>sfx_CrystalPickUp_2.wav</ShortName>
 							<Path>SFX\sfx_CrystalPickUp_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
 				</Event>
-				<Event Id="2429995097" Name="FootstepLoop" ObjectPath="\Events\Default Work Unit\FootstepLoop" DurationType="Infinite"/>
-				<Event Id="1369225059" Name="GiftShopBGM" ObjectPath="\Events\Default Work Unit\GiftShopBGM" DurationType="Infinite"/>
-				<Event Id="793810216" Name="LibraryBGM" ObjectPath="\Events\Default Work Unit\LibraryBGM" DurationType="Infinite"/>
+				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death" DurationType="OneShot" DurationMin="1.591354" DurationMax="1.591354">
+					<IncludedMemoryFiles>
+						<File Id="161785269" Language="SFX">
+							<ShortName>sfx_KnifeStab_1.wav</ShortName>
+							<Path>SFX\sfx_KnifeStab_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2429995097" Name="FootstepLoop" ObjectPath="\Events\Default Work Unit\FootstepLoop" DurationType="OneShot" DurationMin="0.07901" DurationMax="0.124195">
+					<IncludedMemoryFiles>
+						<File Id="6411874" Language="SFX">
+							<ShortName>sfx_footstepLoop.wav</ShortName>
+							<Path>SFX\sfx_footstepLoop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2400612304" Name="FootstepLoopHall" ObjectPath="\Events\Default Work Unit\FootstepLoopHall" DurationType="OneShot" DurationMin="0.07901" DurationMax="0.124195">
+					<IncludedMemoryFiles>
+						<File Id="6411874" Language="SFX">
+							<ShortName>sfx_footstepLoop.wav</ShortName>
+							<Path>SFX\sfx_footstepLoop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1935768893" Name="GhostIdle1" ObjectPath="\Events\Default Work Unit\GhostIdle1" MaxAttenuation="21." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="2135908" Language="SFX">
+							<ShortName>sfx_GhostIdle_1.3.wav</ShortName>
+							<Path>SFX\sfx_GhostIdle_1.3_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1369225059" Name="GiftShopBGM" ObjectPath="\Events\Default Work Unit\GiftShopBGM" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="336414517" Language="SFX">
+							<ShortName>mus_GiftShopBGM.wav</ShortName>
+							<Path>SFX\mus_GiftShopBGM_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump" DurationType="OneShot" DurationMin="0.248162" DurationMax="0.308895">
+					<IncludedMemoryFiles>
+						<File Id="347964455" Language="SFX">
+							<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
+							<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_85181DB2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1548130050" Name="JumpLand" ObjectPath="\Events\Default Work Unit\JumpLand" DurationType="OneShot" DurationMin="0.845907" DurationMax="0.879011">
+					<IncludedMemoryFiles>
+						<File Id="785133605" Language="SFX">
+							<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
+							<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_C3933FC1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1616845350" Name="KeyPickup" ObjectPath="\Events\Default Work Unit\KeyPickup" DurationType="OneShot" DurationMin="0.221146" DurationMax="0.221146">
+					<IncludedMemoryFiles>
+						<File Id="884343402" Language="SFX">
+							<ShortName>sfx_KeyPickUp_1.wav</ShortName>
+							<Path>SFX\sfx_KeyPickUp_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3372421815" Name="LevelStart" ObjectPath="\Events\Default Work Unit\LevelStart" DurationType="OneShot" DurationMin="10.0625" DurationMax="10.0625"/>
+				<Event Id="793810216" Name="LibraryBGM" ObjectPath="\Events\Default Work Unit\LibraryBGM" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="978482577" Language="SFX">
+							<ShortName>mus_LibraryBGM.wav</ShortName>
+							<Path>SFX\mus_LibraryBGM_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="11707695" Name="MainHallBGM" ObjectPath="\Events\Default Work Unit\MainHallBGM" DurationType="OneShot" DurationMin="90.216354" DurationMax="90.216354">
 					<IncludedMemoryFiles>
 						<File Id="338983936" Language="SFX">
@@ -43,30 +149,58 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="738973617" Name="MusicFlipp" ObjectPath="\Events\Default Work Unit\MusicFlipp" DurationType="Infinite"/>
+				<Event Id="2410724393" Name="RoomTone1" ObjectPath="\Events\Default Work Unit\RoomTone1" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="356696703" Language="SFX">
+							<ShortName>426767__cmilan__apartment-room-tone.wav</ShortName>
+							<Path>SFX\426767__cmilan__apartment-room-tone_09C5D755.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="177027278" Name="StopFootsteps" ObjectPath="\Events\Default Work Unit\StopFootsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="4171534483" Name="TorchLoop" ObjectPath="\Events\Default Work Unit\TorchLoop" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="40509159" Language="SFX">
 							<ShortName>sfx_Torch_1.wav</ShortName>
-							<Path>SFX\sfx_Torch_1_1CFE99BD.wem</Path>
+							<Path>SFX\sfx_Torch_1_A3BC1C6F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<IncludedAuxBusses>
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
+				<File Id="2135908" Language="SFX">
+					<ShortName>sfx_GhostIdle_1.3.wav</ShortName>
+					<Path>SFX\sfx_GhostIdle_1.3_D79FB2B7.wem</Path>
+				</File>
 				<File Id="6411874" Language="SFX">
 					<ShortName>sfx_footstepLoop.wav</ShortName>
-					<Path>SFX\sfx_footstepLoop_D79FB2B7.wem</Path>
+					<Path>SFX\sfx_footstepLoop_10C4C929.wem</Path>
 				</File>
 				<File Id="40509159" Language="SFX">
 					<ShortName>sfx_Torch_1.wav</ShortName>
-					<Path>SFX\sfx_Torch_1_1CFE99BD.wem</Path>
+					<Path>SFX\sfx_Torch_1_A3BC1C6F.wem</Path>
 				</File>
 				<File Id="97578855" Language="SFX">
 					<ShortName>sfx_CrystalPickUp_2.wav</ShortName>
 					<Path>SFX\sfx_CrystalPickUp_2_10C4C929.wem</Path>
+				</File>
+				<File Id="161785269" Language="SFX">
+					<ShortName>sfx_KnifeStab_1.wav</ShortName>
+					<Path>SFX\sfx_KnifeStab_1_10C4C929.wem</Path>
+				</File>
+				<File Id="289916624" Language="SFX">
+					<ShortName>mus_LowBeatLoop_v.03.wav</ShortName>
+					<Path>SFX\mus_LowBeatLoop_v.03_D79FB2B7.wem</Path>
 				</File>
 				<File Id="336414517" Language="SFX">
 					<ShortName>mus_GiftShopBGM.wav</ShortName>
@@ -75,6 +209,50 @@
 				<File Id="338983936" Language="SFX">
 					<ShortName>mus_MainHallBGM.wav</ShortName>
 					<Path>SFX\mus_MainHallBGM_10C4C929.wem</Path>
+				</File>
+				<File Id="347964455" Language="SFX">
+					<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
+					<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_85181DB2.wem</Path>
+				</File>
+				<File Id="356696703" Language="SFX">
+					<ShortName>426767__cmilan__apartment-room-tone.wav</ShortName>
+					<Path>SFX\426767__cmilan__apartment-room-tone_09C5D755.wem</Path>
+				</File>
+				<File Id="385304002" Language="SFX">
+					<ShortName>mus_BrassTapeLoop_v.04.wav</ShortName>
+					<Path>SFX\mus_BrassTapeLoop_v.04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="658321127" Language="SFX">
+					<ShortName>sfx_ConditionFlipBassHit.wav</ShortName>
+					<Path>SFX\sfx_ConditionFlipBassHit_10C4C929.wem</Path>
+				</File>
+				<File Id="717207791" Language="SFX">
+					<ShortName>422869__ipaddeh__jump-landing-wood-02.wav</ShortName>
+					<Path>SFX\422869__ipaddeh__jump-landing-wood-02_10C4C929.wem</Path>
+				</File>
+				<File Id="785133605" Language="SFX">
+					<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
+					<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_C3933FC1.wem</Path>
+				</File>
+				<File Id="817937983" Language="SFX">
+					<ShortName>sfx_ConditionFlip.wav</ShortName>
+					<Path>SFX\sfx_ConditionFlip_10C4C929.wem</Path>
+				</File>
+				<File Id="863462924" Language="SFX">
+					<ShortName>mus_StringChatterLoop_v.04.wav</ShortName>
+					<Path>SFX\mus_StringChatterLoop_v.04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="879034394" Language="SFX">
+					<ShortName>sfx_BatteryPickup1.wav</ShortName>
+					<Path>SFX\sfx_BatteryPickup1_10C4C929.wem</Path>
+				</File>
+				<File Id="884343402" Language="SFX">
+					<ShortName>sfx_KeyPickUp_1.wav</ShortName>
+					<Path>SFX\sfx_KeyPickUp_1_10C4C929.wem</Path>
+				</File>
+				<File Id="960818493" Language="SFX">
+					<ShortName>sfx_LevelStart.wav</ShortName>
+					<Path>SFX\sfx_LevelStart_10C4C929.wem</Path>
 				</File>
 				<File Id="978482577" Language="SFX">
 					<ShortName>mus_LibraryBGM.wav</ShortName>

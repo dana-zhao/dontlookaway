@@ -20,6 +20,7 @@ public class Win : MonoBehaviour
     {
         if (script.allCollect && Vector3.Distance(player.transform.position, this.transform.position) <= detectionRange)
         {
+            AkSoundEngine.StopAll();
             SceneManager.LoadScene("Hallway1");
         }
     }

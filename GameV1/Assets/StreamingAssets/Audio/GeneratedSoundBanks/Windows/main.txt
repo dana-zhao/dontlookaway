@@ -1,10 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
 	11707695	MainHallBGM			\Default Work Unit\MainHallBGM	
+	177027278	StopFootsteps			\Default Work Unit\StopFootsteps	
+	738973617	MusicFlipp			\Default Work Unit\MusicFlipp	
+	779278001	Death			\Default Work Unit\Death	
 	793810216	LibraryBGM			\Default Work Unit\LibraryBGM	
+	934648088	BatteryPickup			\Default Work Unit\BatteryPickup	
 	1369225059	GiftShopBGM			\Default Work Unit\GiftShopBGM	
+	1548130050	JumpLand			\Default Work Unit\JumpLand	
+	1616845350	KeyPickup			\Default Work Unit\KeyPickup	
+	1935768893	GhostIdle1			\Default Work Unit\GhostIdle1	
+	2400612304	FootstepLoopHall			\Default Work Unit\FootstepLoopHall	
+	2410724393	RoomTone1			\Default Work Unit\RoomTone1	
 	2429995097	FootstepLoop			\Default Work Unit\FootstepLoop	
+	3372421815	LevelStart			\Default Work Unit\LevelStart	
+	3475515249	ConditionFlip			\Default Work Unit\ConditionFlip	
+	3833651337	Jump			\Default Work Unit\Jump	
 	3943406705	CrystalPickUp			\Default Work Unit\CrystalPickUp	
 	4171534483	TorchLoop			\Default Work Unit\TorchLoop	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1208172739	States			\Default Work Unit\States	
+
+State	ID	Name	State Group			Notes
+	410764645	MonsterFlippy	States			
+	748895195	None	States			
+	1097930397	MonsterHappy	States			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	79985960	MonsterHappy	States	\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp		
+
+Modulator Time	ID	Name			Wwise Object Path	Notes
+	756649536	BGMFade			\Default Work Unit\BGMFade	
+	774729825	FootstepFade			\Default Work Unit\FootstepFade	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
@@ -13,13 +40,31 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	4135210879	GiftShop			\Default Work Unit\Master Audio Bus\GiftShop	
 
 Effect plug-ins	ID	Name	Type				Notes
-	2513915904	Hall_Large	Wwise RoomVerb			
+	84696384	_	Wwise Pitch Shifter			
+	2689776681	New_Wwise_Parametric_EQ_01	Wwise Parametric EQ			
+	2791153688	Hall_Small	Wwise RoomVerb			
+	2949243095	Hall_Small_Bright	Wwise RoomVerb			
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	6411874	sfx_footstepLoop	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_footstepLoop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoop		20436
-	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_Torch_1_1CFE99BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		978588
+	2135908	sfx_GhostIdle_1_3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_GhostIdle_1.3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_GhostIdle_1_3		4854588
+	6411874	sfx_footstepLoop	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_footstepLoop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoop		20436
+	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_Torch_1_A3BC1C6F.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		950308
 	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_CrystalPickUp_2		34280
+	161785269	sfx_KnifeStab_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_KnifeStab_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_KnifeStab_1		305668
+	289916624	mus_LowBeatLoop_v_03	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_LowBeatLoop_v.03_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_LowBeatLoop_v_03		5316128
 	336414517	mus_GiftShopBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_GiftShopBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_GiftShopBGM		25256436
 	338983936	mus_MainHallBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_MainHallBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_MainHallBGM		17321668
+	347964455	sfx_Jump	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_85181DB2.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Jump		21948
+	356696703	426767__cmilan__apartment-room-tone	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\426767__cmilan__apartment-room-tone_09C5D755.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\426767__cmilan__apartment-room-tone		3860416
+	385304002	mus_BrassTapeLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_BrassTapeLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_BrassTapeLoop_v_04		2127820
+	658321127	sfx_ConditionFlipBassHit	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_ConditionFlipBassHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlipBassHit		1427204
+	717207791	422869__ipaddeh__jump-landing-wood-02	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\422869__ipaddeh__jump-landing-wood-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\422869__ipaddeh__jump-landing-wood-02		184676
+	785133605	sfx_Land	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_C3933FC1.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Land		13262
+	817937983	sfx_ConditionFlip	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_ConditionFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlip		1042280
+	863462924	mus_StringChatterLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_StringChatterLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_StringChatterLoop_v_04		4477052
+	879034394	sfx_BatteryPickup1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_BatteryPickup1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_BatteryPickup1		51820
+	884343402	sfx_KeyPickUp_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_KeyPickUp_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_KeyPickUp_1		42588
+	960818493	sfx_LevelStart	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\sfx_LevelStart_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_LevelStart		1932128
 	978482577	mus_LibraryBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Windows\SFX\mus_LibraryBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_LibraryBGM		16761360
 
