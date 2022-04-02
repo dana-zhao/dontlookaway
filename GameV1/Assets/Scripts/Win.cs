@@ -13,6 +13,7 @@ public class Win : MonoBehaviour
     void Start()
     {
         detectionRange = 3;
+        script = GameObject.FindObjectOfType<GameStatus>();
     }
 
     // Update is called once per frame
