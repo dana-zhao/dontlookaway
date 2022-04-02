@@ -12,7 +12,6 @@ public class PickUp : MonoBehaviour
     public GameObject FloatingTextPrefab;
     private TasksCompletion _TasksCompletion;
     private bool tutDisplayed = false;
-    public GameObject Objective;
     public bool isTut = false;
     public GameObject GameStatus;
     private GameStatus gameStatus;
@@ -78,7 +77,7 @@ public class PickUp : MonoBehaviour
             closeEnough = true;
 
         }
-        if (Objective.transform.childCount <= 3)
+        if (gameStatus.allCollected())
         {
             var textMeshPro = FloatingTextPrefab.GetComponent<popUpTextSelf>();
             textMeshPro.setText("Collect and run!!", 500);
