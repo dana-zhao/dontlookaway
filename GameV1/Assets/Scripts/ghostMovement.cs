@@ -46,7 +46,6 @@ public class ghostMovement : MonoBehaviour
         //agent.radius = 0.5f;
         agent.autoBraking = false;
         agent.acceleration = 177f;
-        navMeshQuery = new NavMeshQuery(NavMeshWorld.GetDefaultWorld(), Unity.Collections.Allocator.Persistent);
     }
 
     //void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
@@ -188,7 +187,9 @@ public class ghostMovement : MonoBehaviour
         depth -= 1;
         //Vector3 v3Pos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(0f, 3f), Random.Range(0f, 3f), Random.Range(20f, 100f)));
         Vector3 v3Pos = Camera.main.transform.position + new Vector3(Random.Range(-30f, 30f), Random.Range(-30f, 30f), Random.Range(-30f, 30f));
+        navMeshQuery = new NavMeshQuery(NavMeshWorld.GetDefaultWorld(), Unity.Collections.Allocator.Persistent);
         NavMeshLocation location = navMeshQuery.MapLocation(v3Pos, new Vector3(100f, 100f, 100f), 0);
+        navMeshQuery.Dispose();
         if (depth == 0)
         {
             transform.position = location.position;
@@ -253,11 +254,6 @@ public class ghostMovement : MonoBehaviour
 
 
         else movement(desiredSpeed);
-    }
-
-    void OnDestroy()
-    {
-        navMeshQuery.Dispose();
     }
 }
 
