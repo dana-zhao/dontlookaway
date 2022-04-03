@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.AI;
 
 public class ghostMovement : MonoBehaviour
 {
     public CharacterController controller;
     public UnityEngine.AI.NavMeshAgent agent;
+    public NavMeshQuery navMeshQuery;
     public bool isSeen;
     public bool isFacing;
     //public float speed = 5f;
@@ -40,7 +42,7 @@ public class ghostMovement : MonoBehaviour
         gameStatus = GameObject.FindObjectOfType<GameStatus>();
         agent.autoBraking = false;
         agent.acceleration = 177f;
-
+        navMeshQuery = new NavMeshQuery(NavMeshWorld.GetDefaultWorld(), Unity.Collections.Allocator.Persistent);
     }
 
     //void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
@@ -89,7 +91,7 @@ public class ghostMovement : MonoBehaviour
     void flippMovement(float desiredSpeed)
     {
         agent.destination = target.transform.position;
-        transform.LookAt(target.transform);
+        //transform.LookAt(target.transform);
         if (isFacing)
         {
             agent.speed = desiredSpeed;
@@ -171,9 +173,33 @@ public class ghostMovement : MonoBehaviour
         return true;
     }
 
+    private void teleport()
+    {
+        //Vector3 v3Pos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(0f, 3f), Random.Range(0f, 3f), Random.Range(20f, 100f)));
+        Vector3 v3Pos = Camera.main.transform.position + new Vector3(Random.Range(-100f, 100f), Random.Range(-30f, 30f), Random.Range(-100f, 100f));
+        NavMeshLocation location = navMeshQuery.MapLocation(v3Pos, new Vector3(100f, 100f, 100f), 0);
+        //print(navMeshQuery.IsValid(location));
+
+        RaycastHit hit;
+        var rayDirection = Camera.main.transform.position - location.position;
+        if (Vector3.Distance(location.position, Camera.main.transform.position) < 20f ||
+            Physics.Raycast(location.position, rayDirection, out hit, Mathf.Infinity) && hit.transform.name.Contains(targetName))
+        {
+            teleport();
+            return;
+        }
+        transform.position = location.position;
+        //print(transform.position);
+    }
+
     // Update is called once per frame
     void Update()
     {
+        print(transform.position);
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            teleport();
+        }
         //isVisible = isInSight(transform.position, target);
         //manually flipping the movement condition
         if (Input.GetKeyUp(KeyCode.F))
@@ -208,6 +234,11 @@ public class ghostMovement : MonoBehaviour
 
 
         else movement(desiredSpeed);
+    }
+
+    void OnDestroy()
+    {
+        navMeshQuery.Dispose();
     }
 }
 

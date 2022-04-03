@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1411,7 +1411,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 444695375}
   isTut: 0
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 688432707}
@@ -3949,7 +3948,7 @@ RectTransform:
   m_Children:
   - {fileID: 712311604}
   m_Father: {fileID: 188763656}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -4258,11 +4257,6 @@ Transform:
   m_Father: {fileID: 18362552}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &444695375 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4098016356304962045, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
-  m_PrefabInstance: {fileID: 1614083172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &453981252
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5360,38 @@ PrefabInstance:
     - target: {fileID: 6877485538446335267, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.0514
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528316797183420526, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153328347444522490, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -1720918347594288892, guid: f0e04a71d1dd8204084d994f8ee237d6, type: 3}
@@ -11902,7 +11928,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 444695375}
   isTut: 0
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 688432707}
@@ -16900,7 +16925,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 444695375}
   isTut: 0
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 688432707}
@@ -17157,6 +17181,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1558302707730627008, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770300007392688872, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770300007392688872, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770300007392688872, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770300007392688872, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -20645,7 +20685,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 444695375}
   isTut: 0
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 2118531126}
@@ -21571,7 +21610,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 444695375}
   isTut: 0
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 2123881799}
