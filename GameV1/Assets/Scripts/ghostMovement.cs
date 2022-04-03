@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.AI;
 
 public class ghostMovement : MonoBehaviour
 {
     public CharacterController controller;
     public UnityEngine.AI.NavMeshAgent agent;
+    public NavMeshQuery navMeshQuery;
+    public bool teleportable = false;
     public bool isSeen;
     public bool isFacing;
+    public bool lastTickSeen;
     //public float speed = 5f;
     public GameObject target;
     public string targetName = "Player";
@@ -29,6 +33,7 @@ public class ghostMovement : MonoBehaviour
     public bool isVisible = true;
     private Vector3 oldPosition;
 
+    private Vector3 stopBy = Vector3.zero;
     public float speed;
     // Start is called before the first frame update
     void Start()
@@ -38,9 +43,10 @@ public class ghostMovement : MonoBehaviour
         //controller.enabled = false;
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         gameStatus = GameObject.FindObjectOfType<GameStatus>();
+        //agent.radius = 0.5f;
         agent.autoBraking = false;
         agent.acceleration = 177f;
-
+        navMeshQuery = new NavMeshQuery(NavMeshWorld.GetDefaultWorld(), Unity.Collections.Allocator.Persistent);
     }
 
     //void controllerMove(Vector3 position, Vector3 targetPosition, float speed)
@@ -54,34 +60,39 @@ public class ghostMovement : MonoBehaviour
 
     void movement(float speed)
     {
+        Vector3 dest = target.transform.position;
+        //if (stopBy == Vector3.zero) dest = target.transform.position;
+        //else dest = stopBy;
         if (!isSeen)
         {
             //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-            agent.destination = target.transform.position;
+            agent.destination = dest;
+            //agent.speed = speed + stopBy.magnitude * Time.deltaTime * 17.7f;
             agent.speed = speed;
             transform.LookAt(agent.nextPosition);
         }
         else
         {
             agent.speed = 0;
-            agent.destination = transform.position;
+            agent.destination = dest;
         }
+        if (!agent.pathPending && agent.remainingDistance < 2f) stopBy = Vector3.zero;
         return;
-        if (isFacing && !isSeen)
-        {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
-                //transform.position = target.transform.position - target.transform.forward * 50; 
-                agent.destination = target.transform.position;
+        //if (isFacing && !isSeen)
+        //{
+        //    timeLeft -= Time.deltaTime;
+        //    if (timeLeft < 0)
+        //    {
+        //        //transform.position = target.transform.position - target.transform.forward * 50; 
+        //       agent.destination = target.transform.position;
 
-            }
-        }
-        if (isFacing && isSeen)
-        {
-            agent.destination = transform.position;
-        }
-        else timeLeft = 1.5f;
+        //    }
+        //}
+        //if (isFacing && isSeen)
+        //{
+        //    agent.destination = transform.position;
+        //}
+        //else timeLeft = 1.5f;
 
         agent.speed = speed;
     }
@@ -89,7 +100,7 @@ public class ghostMovement : MonoBehaviour
     void flippMovement(float desiredSpeed)
     {
         agent.destination = target.transform.position;
-        transform.LookAt(target.transform);
+        //transform.LookAt(target.transform);
         if (isFacing)
         {
             agent.speed = desiredSpeed;
@@ -171,9 +182,46 @@ public class ghostMovement : MonoBehaviour
         return true;
     }
 
+    private void teleport(int depth = 70)
+    {
+        if (!teleportable) return;
+        depth -= 1;
+        //Vector3 v3Pos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(0f, 3f), Random.Range(0f, 3f), Random.Range(20f, 100f)));
+        Vector3 v3Pos = Camera.main.transform.position + new Vector3(Random.Range(-30f, 30f), Random.Range(-30f, 30f), Random.Range(-30f, 30f));
+        NavMeshLocation location = navMeshQuery.MapLocation(v3Pos, new Vector3(100f, 100f, 100f), 0);
+        if (depth == 0)
+        {
+            transform.position = location.position;
+            return;
+        }
+        RaycastHit hit;
+        var rayDirection = Camera.main.transform.position - location.position;
+        if (Vector3.Distance(location.position, Camera.main.transform.position) < 7.7f)
+        {
+            teleport(depth);
+            return;
+        }
+        if (Physics.Raycast(location.position, rayDirection, out hit, Mathf.Infinity) && hit.transform.name.Contains(targetName))
+        {
+            teleport(depth);
+            return;
+        }
+        transform.position = location.position;
+        //stopBy = location.position;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.Z))
+        {
+            teleport();
+        }
+
+        if (lastTickSeen && !isSeen)
+        {
+            if (Random.Range(0f, 1f) < 0.27f) teleport();
+        }
         //isVisible = isInSight(transform.position, target);
         //manually flipping the movement condition
         if (Input.GetKeyUp(KeyCode.F))
@@ -188,9 +236,6 @@ public class ghostMovement : MonoBehaviour
             flipp = true;
             AkSoundEngine.SetState("States", "MonsterFlippy");
         }
-
-            
-            
 
         float dist = Vector3.Distance(target.transform.position, transform.position);
         float desiredSpeed = dist;
@@ -208,6 +253,11 @@ public class ghostMovement : MonoBehaviour
 
 
         else movement(desiredSpeed);
+    }
+
+    void OnDestroy()
+    {
+        navMeshQuery.Dispose();
     }
 }
 
