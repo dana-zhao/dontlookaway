@@ -36,10 +36,9 @@ public class TargetManager : MonoBehaviour
             var rayDirection = Camera.main.transform.position - t.position;
             if (Physics.Raycast(t.position, rayDirection, out hit, Mathf.Infinity))
                 if (hit.transform == player.transform)
-                    return true;
+                    return true; 
         }
         //return false;
-
 
         float off = 1f;
         foreach (Transform transform in target.transform)
@@ -71,6 +70,7 @@ public class TargetManager : MonoBehaviour
     void Update()
     {
         var ghost = target.GetComponent<ghostMovement>();
+        ghost.lastTickSeen = ghost.isSeen;
         ghost.isSeen = false;
         ghost.isFacing = false;
         if (IsVisible(cam, target))
