@@ -28,7 +28,12 @@ public class TasksCompletion : MonoBehaviour
         },
         {"Statue", new Dictionary<string, string>
             {
-                
+                {"Jar", "Canopic Jar 1"},
+                {"Jar (1)", "Canopic Jar 2"},
+                {"Jar (2)", "Canopic Jar 3"},
+                {"Jar (3)", "Canopic Jar 4"},
+                {"Battery", "Battery for flashlight"},
+                {"Key", "Key for exit"},
             }
         },
     };
