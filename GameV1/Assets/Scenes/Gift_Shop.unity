@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.25
+  m_AmbientIntensity: 0.35
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -834,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f307ef3f80e3efd4eaf83086a542f13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Objective: {fileID: 1236343954}
+  Objective: {fileID: 0}
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
 --- !u!1001 &168558933
 PrefabInstance:
@@ -1807,7 +1807,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 1236343954}
   isTut: 1
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1647494667}
@@ -2105,7 +2104,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 311994905}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2304,7 +2303,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 1236343954}
   isTut: 1
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
@@ -2764,7 +2762,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 1236343954}
   isTut: 1
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
@@ -2948,11 +2945,6 @@ Transform:
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3244376463301777552, guid: ad15f1fbc1def4946b029105b2e3113f, type: 3}
   m_PrefabInstance: {fileID: 3244376464354344002}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1236343954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4098016356304962045, guid: 557060bb74a35ac49a038de20f53bc02, type: 3}
-  m_PrefabInstance: {fileID: 1978847958}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1241794825
 PrefabInstance:
@@ -3660,7 +3652,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 1236343954}
   isTut: 1
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
@@ -3958,8 +3949,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
-  m_Range: 60
+  m_Intensity: 90
+  m_Range: 75
   m_SpotAngle: 40
   m_InnerSpotAngle: 4
   m_CookieSize: 10
@@ -3989,7 +3980,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: 7f4b9d678ae21f94cae37c27309b3bbe, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -4232,7 +4223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f307ef3f80e3efd4eaf83086a542f13c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Objective: {fileID: 1236343954}
+  Objective: {fileID: 0}
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
 --- !u!1 &1676227007 stripped
 GameObject:
@@ -4476,7 +4467,6 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 7856949548873023383, guid: 46fdd86d597a5264aa52c5cf9e357ca1, type: 3}
-  Objective: {fileID: 1236343954}
   isTut: 1
   GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 1204282578}
@@ -4806,8 +4796,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1851267727}
   agent: {fileID: 0}
+  teleportable: 0
   isSeen: 0
   isFacing: 0
+  lastTickSeen: 0
   target: {fileID: 37846052}
   targetName: Player
   gameStatus: {fileID: 0}
