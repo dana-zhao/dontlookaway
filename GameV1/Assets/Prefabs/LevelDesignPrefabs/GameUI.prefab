@@ -197,6 +197,7 @@ MonoBehaviour:
   TimerObj: {fileID: 7359100353119423046}
   PausePanel: {fileID: 5409202574420906195}
   TaskList: {fileID: 6378682922332193525}
+  Simple: {fileID: 2080480860745796772}
 --- !u!1 &729787542384723181
 GameObject:
   m_ObjectHideFlags: 0
