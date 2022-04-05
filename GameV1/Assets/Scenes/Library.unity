@@ -6278,7 +6278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drainOverTime: 1
-  maxBrightness: 2
+  maxBrightness: 10
   minBrightness: 0.2
   drainRate: 2
 --- !u!108 &552455593
