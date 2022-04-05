@@ -23,6 +23,12 @@ public class NextLevel : MonoBehaviour
         else if (level == "Gift_Shop"){
             level = "Library";
         }
+        else if (level =="Library") {
+            level = "Statue";
+        }
+        else if (level == "Statue") {
+            level = "Tomb";
+        }
     }
 
     // Update is called once per frame
