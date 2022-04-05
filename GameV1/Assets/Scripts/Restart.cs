@@ -15,6 +15,7 @@ public class Restart : MonoBehaviour
     {
         if (Input.GetKeyDown("space")){
             SceneManager.LoadScene(GameStatus.currentLevel);
+            AkSoundEngine.StopAll();
         }
     }
 }
