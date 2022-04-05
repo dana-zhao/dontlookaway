@@ -19,7 +19,7 @@
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1508255196">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3293738068">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -51,15 +51,15 @@
 					<IncludedMemoryFiles>
 						<File Id="161785269" Language="SFX">
 							<ShortName>sfx_KnifeStab_1.wav</ShortName>
-							<Path>SFX\sfx_KnifeStab_1_61E990AE.wem</Path>
+							<Path>SFX\sfx_KnifeStab_1_CAC22E5E.wem</Path>
 						</File>
 						<File Id="709223425" Language="SFX">
 							<ShortName>339191__shillsuqat__chewing-zombie-wav.wav</ShortName>
-							<Path>SFX\339191__shillsuqat__chewing-zombie-wav_661EC19B.wem</Path>
+							<Path>SFX\339191__shillsuqat__chewing-zombie-wav_983277FE.wem</Path>
 						</File>
 						<File Id="926713740" Language="SFX">
 							<ShortName>416044__giddster__monster-growl-10.wav</ShortName>
-							<Path>SFX\416044__giddster__monster-growl-10_06D781D0.wem</Path>
+							<Path>SFX\416044__giddster__monster-growl-10_5AB75A8D.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -104,12 +104,16 @@
 						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2619949524" Name="GhostCloser" ObjectPath="\Events\Default Work Unit\GhostCloser" MaxAttenuation="10." DurationType="Infinite"/>
-				<Event Id="1935768893" Name="GhostIdle1" ObjectPath="\Events\Default Work Unit\GhostIdle1" MaxAttenuation="21." DurationType="Infinite">
+				<Event Id="2619949524" Name="GhostCloser" ObjectPath="\Events\Default Work Unit\GhostCloser" DurationType="Infinite"/>
+				<Event Id="1935768893" Name="GhostIdle1" ObjectPath="\Events\Default Work Unit\GhostIdle1" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="2135908" Language="SFX">
 							<ShortName>sfx_GhostIdle_1.3.wav</ShortName>
 							<Path>SFX\sfx_GhostIdle_1.3_D79FB2B7.wem</Path>
+						</File>
+						<File Id="3688144" Language="SFX">
+							<ShortName>sfx_GhostIdle_2.wav</ShortName>
+							<Path>SFX\sfx_GhostIdle_2_D79FB2B7.wem</Path>
 						</File>
 						<File Id="14623319" Language="SFX">
 							<ShortName>sfx_ghostCloser.wav</ShortName>
@@ -213,6 +217,10 @@
 					<ShortName>sfx_GhostIdle_1.3.wav</ShortName>
 					<Path>SFX\sfx_GhostIdle_1.3_D79FB2B7.wem</Path>
 				</File>
+				<File Id="3688144" Language="SFX">
+					<ShortName>sfx_GhostIdle_2.wav</ShortName>
+					<Path>SFX\sfx_GhostIdle_2_D79FB2B7.wem</Path>
+				</File>
 				<File Id="6411874" Language="SFX">
 					<ShortName>sfx_footstepLoop.wav</ShortName>
 					<Path>SFX\sfx_footstepLoop_10C4C929.wem</Path>
@@ -235,7 +243,7 @@
 				</File>
 				<File Id="161785269" Language="SFX">
 					<ShortName>sfx_KnifeStab_1.wav</ShortName>
-					<Path>SFX\sfx_KnifeStab_1_61E990AE.wem</Path>
+					<Path>SFX\sfx_KnifeStab_1_CAC22E5E.wem</Path>
 				</File>
 				<File Id="240635430" Language="SFX">
 					<ShortName>sfx_newFoostep_2.wav</ShortName>
@@ -271,7 +279,7 @@
 				</File>
 				<File Id="709223425" Language="SFX">
 					<ShortName>339191__shillsuqat__chewing-zombie-wav.wav</ShortName>
-					<Path>SFX\339191__shillsuqat__chewing-zombie-wav_661EC19B.wem</Path>
+					<Path>SFX\339191__shillsuqat__chewing-zombie-wav_983277FE.wem</Path>
 				</File>
 				<File Id="717207791" Language="SFX">
 					<ShortName>422869__ipaddeh__jump-landing-wood-02.wav</ShortName>
@@ -299,7 +307,7 @@
 				</File>
 				<File Id="926713740" Language="SFX">
 					<ShortName>416044__giddster__monster-growl-10.wav</ShortName>
-					<Path>SFX\416044__giddster__monster-growl-10_06D781D0.wem</Path>
+					<Path>SFX\416044__giddster__monster-growl-10_5AB75A8D.wem</Path>
 				</File>
 				<File Id="960818493" Language="SFX">
 					<ShortName>sfx_LevelStart.wav</ShortName>

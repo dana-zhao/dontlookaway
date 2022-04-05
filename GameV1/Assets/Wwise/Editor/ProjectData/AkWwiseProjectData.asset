@@ -127,7 +127,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: b628176ae679ca4dae03e4a466624578
       Path: Events\Default Work Unit\BatteryPickup
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.269229
       minDuration: 0.269229
     - name: ConditionFlip
@@ -161,7 +161,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f882455631b71d4b96d1310d38c4ceba
       Path: Events\Default Work Unit\CrystalPickUp
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.197023
       minDuration: 0.156016
     - name: Death
@@ -246,7 +246,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ecb692cec3dc084a9f7e89ea0047598c
       Path: Events\Default Work Unit\GhostIdle1
-      maxAttenuation: 21
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: GiftShopBGM
@@ -314,7 +314,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9f56713c642cba45ab13e5aa23516b32
       Path: Events\Default Work Unit\KeyPickup
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.221146
       minDuration: 0.221146
     - name: LevelStart
@@ -467,7 +467,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 90e5e7fcfadc97459caed47e98677644
       Path: Events\Default Work Unit\TorchLoop
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -593,7 +593,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000001e0000001f0000005000000051000000890000008a000000c4000000c5000000e0000000e1000000
+  ExpandedWaapiItemIds: 0500000006000000070000001f00000020000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
