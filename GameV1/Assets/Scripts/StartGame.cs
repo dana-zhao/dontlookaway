@@ -20,17 +20,21 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startGameObj.SetActive(true);
-        TimerObj.SetActive(false);
+        // startGameObj.SetActive(true);
+        startGameObj.SetActive(false);
+        // TimerObj.SetActive(false);
         PausePanel.SetActive(false);
-        Simple.SetActive(false);
+        // Simple.SetActive(false);
 
         _timerText = TimerObj.GetComponent<Text>();
         _timerText.text = "Time: 0";
 
-        Time.timeScale = 0;
+        // Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.Locked;
 
+        TimerObj.SetActive(true);
+        Simple.SetActive(true);
+        Time.timeScale = 1;
         
     }
 
@@ -51,14 +55,7 @@ public class StartGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // start
-        if (startGameObj.activeSelf && Input.GetKeyDown("space"))
-        {
-            startGameObj.SetActive(false);
-            TimerObj.SetActive(true);
-            Simple.SetActive(true);
-            Time.timeScale = 1;
-        }
+
 
         //pause resume
         if (Input.GetKeyDown("escape") && !startGameObj.activeSelf){
