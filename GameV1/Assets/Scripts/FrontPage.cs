@@ -34,7 +34,8 @@ public class FrontPage : MonoBehaviour
     {
         string scene = button.name;
 		SceneManager.LoadScene(scene);
-	}
+        AkSoundEngine.StopAll();
+    }
 
     void levels()
     {
