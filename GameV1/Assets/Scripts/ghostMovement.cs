@@ -197,7 +197,7 @@ public class ghostMovement : MonoBehaviour
         }
         RaycastHit hit;
         var rayDirection = Camera.main.transform.position - location.position;
-        if (Vector3.Distance(location.position, Camera.main.transform.position) < 7.7f)
+        if (Vector3.Distance(location.position, Camera.main.transform.position) < 12.7f)
         {
             teleport(depth);
             return;
@@ -221,7 +221,7 @@ public class ghostMovement : MonoBehaviour
 
         if (lastTickSeen && !isSeen)
         {
-            if (Random.Range(0f, 1f) < 0.27f) teleport();
+            if (Random.Range(0f, 1f) < 0.17f) teleport();
         }
         //isVisible = isInSight(transform.position, target);
         //manually flipping the movement condition
