@@ -11,15 +11,16 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="757474065">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3087625314">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3293738068">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2609194027">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -104,8 +105,8 @@
 						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="2619949524" Name="GhostCloser" ObjectPath="\Events\Default Work Unit\GhostCloser" DurationType="Infinite"/>
-				<Event Id="1935768893" Name="GhostIdle1" ObjectPath="\Events\Default Work Unit\GhostIdle1" DurationType="Infinite">
+				<Event Id="2619949524" Name="GhostCloser" ObjectPath="\Events\Default Work Unit\GhostCloser" MaxAttenuation="30." DurationType="Infinite"/>
+				<Event Id="1935768893" Name="GhostIdle1" ObjectPath="\Events\Default Work Unit\GhostIdle1" MaxAttenuation="30." DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="2135908" Language="SFX">
 							<ShortName>sfx_GhostIdle_1.3.wav</ShortName>
@@ -121,6 +122,7 @@
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 					</AuxBusSends>
 				</Event>
@@ -210,6 +212,7 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedAuxBusses>
+				<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>

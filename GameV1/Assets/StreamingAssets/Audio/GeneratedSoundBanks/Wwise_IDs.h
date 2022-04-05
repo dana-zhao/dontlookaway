@@ -65,6 +65,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID GHOSTIDLEAUXBUS = 3167756628U;
         static const AkUniqueID GIFTSHOP = 4135210879U;
     } // namespace AUX_BUSSES
 

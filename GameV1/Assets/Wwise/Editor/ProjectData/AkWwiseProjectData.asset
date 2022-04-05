@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b6c286c0779a4048b93d6db986a1fced
     GuidInternal: 
-    m_lastTime: -8585536754253324411
+    m_lastTime: -8585524850743270629
     List:
+    - name: GhostIdleAuxBus
+      guid: ec50faf696a8ff4dac4b2d232c2578c1
+      id: 3167756628
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b6c286c0779a4048b93d6db986a1fced
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: GhostIdleAuxBus
+        ObjectType: 1
+        guid: ec50faf696a8ff4dac4b2d232c2578c1
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus
     - name: GiftShop
       guid: 79a327ebe0e5614cbbead48523ced1f2
       id: 4135210879
@@ -229,7 +246,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2cf183b991b6ee418804d1fd6904cd76
       Path: Events\Default Work Unit\GhostCloser
-      maxAttenuation: 10
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: GhostIdle1
@@ -246,7 +263,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: ecb692cec3dc084a9f7e89ea0047598c
       Path: Events\Default Work Unit\GhostIdle1
-      maxAttenuation: 100
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: GiftShopBGM
@@ -593,7 +610,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000001f00000020000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000001f00000020000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
