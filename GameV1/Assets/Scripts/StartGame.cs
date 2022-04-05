@@ -32,7 +32,7 @@ public class StartGame : MonoBehaviour
         // Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.Locked;
 
-        TimerObj.SetActive(true);
+        TimerObj.SetActive(false);
         Simple.SetActive(true);
         Time.timeScale = 1;
         
