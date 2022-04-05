@@ -276,7 +276,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Task1
 --- !u!1 &805193794087635591
@@ -1195,6 +1195,7 @@ MonoBehaviour:
   Simple: {fileID: 2080480860745796772}
   ToogleGroup: {fileID: 2678198788578828587}
   TaskTemplate: {fileID: 4662139983384935800}
+  count: 0
   gameStatus: {fileID: 0}
 --- !u!1 &6721929803158515413
 GameObject:

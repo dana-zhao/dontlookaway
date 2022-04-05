@@ -21,8 +21,8 @@ public class TasksCompletion : MonoBehaviour
                 {"Blue crystal", "Blue Crystal 1"},
                 {"Blue crystal (1)", "Blue Crystal 2"},
                 {"Blue crystal (2)", "Blue Crystal 3"},
-                {"Battery", "Battery for flashlight"},
                 {"Key", "Key for exit"},
+                {"Battery", "Battery for flashlight"},
             }
         },
         {"Statue", new Dictionary<string, string>
@@ -31,8 +31,8 @@ public class TasksCompletion : MonoBehaviour
                 {"Jar (1)", "Canopic Jar 2"},
                 {"Jar (2)", "Canopic Jar 3"},
                 {"Jar (3)", "Canopic Jar 4"},
-                {"Battery", "Battery for flashlight"},
                 {"Key", "Key for exit"},
+                {"Battery", "Battery for flashlight"},
             }
         },
     };
