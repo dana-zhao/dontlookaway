@@ -6,8 +6,7 @@ public class tutTextManager : MonoBehaviour
 {
     public GameObject tutText;
     public GameStatus gameStatus;
-    public GameObject cashier;
-    private bool shown1 = false;
+    public GameObject[] counters;
     private bool shown2 = false;
     // Start is called before the first frame update
     void Start()
@@ -19,22 +18,21 @@ public class tutTextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!shown1 && gameStatus.currentInventory == 1)
+        if (shown2) return;
+
+        Debug.Log(counters.Length);
+
+        foreach (GameObject counter in counters)
         {
-            tutText.GetComponent<tutTextController>().setText("press i to open inventory");
-            tutText.SetActive(true);
-            StartCoroutine(updateOff());
-            shown1 = true;
+            if (Vector3.Distance(Camera.main.transform.position, counter.transform.position) < 5f)
+            {
+                tutText.GetComponent<tutTextController>().setText("Press space to jump");
+                tutText.SetActive(true);
+                StartCoroutine(updateOff());
+                shown2 = true;
+            }
         }
 
-        if (shown2) return;
-        if (Vector3.Distance(Camera.main.transform.position, cashier.transform.position) < 5f)
-        {
-            tutText.GetComponent<tutTextController>().setText("press space to jump");
-            tutText.SetActive(true);
-            StartCoroutine(updateOff());
-            shown2 = true;
-        }
     }
 
     IEnumerator updateOff()
