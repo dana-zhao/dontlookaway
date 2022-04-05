@@ -49,6 +49,7 @@ public class TasksCompletion : MonoBehaviour
     void Start()
     {
         gameStatus = GameObject.FindObjectOfType<GameStatus>();
+        gameStatus.Reset();
         LoadTask();
 
         foreach(KeyValuePair<string, string> task in tasks){

@@ -47,4 +47,11 @@ public class GameStatus : MonoBehaviour
         allCollect = false;
     }
 
+    public void Reset(){
+        currentLevel = SceneManager.GetActiveScene().name;
+        currentInventory = 0;
+        currentTasks = 0;
+        allCollect = false;
+    }
+
 }
