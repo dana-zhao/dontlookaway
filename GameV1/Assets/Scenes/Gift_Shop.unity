@@ -4417,7 +4417,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutText: {fileID: 872794486}
   gameStatus: {fileID: 0}
-  cashier: {fileID: 9210796}
+  counters:
+  - {fileID: 285659846}
+  - {fileID: 1403707029}
+  - {fileID: 604585107}
+  - {fileID: 1306918136}
 --- !u!1 &1693811407
 GameObject:
   m_ObjectHideFlags: 0

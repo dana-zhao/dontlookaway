@@ -10,6 +10,7 @@ public class StartGame : MonoBehaviour
     public GameObject TimerObj;
     public GameObject PausePanel;
     public GameObject TaskList;
+    public GameObject Simple;
 
 
     private Text _timerText;
@@ -22,7 +23,7 @@ public class StartGame : MonoBehaviour
         startGameObj.SetActive(true);
         TimerObj.SetActive(false);
         PausePanel.SetActive(false);
-        TaskList.SetActive(false);
+        Simple.SetActive(false);
 
         _timerText = TimerObj.GetComponent<Text>();
         _timerText.text = "Time: 0";
@@ -55,7 +56,7 @@ public class StartGame : MonoBehaviour
         {
             startGameObj.SetActive(false);
             TimerObj.SetActive(true);
-            TaskList.SetActive(true);
+            Simple.SetActive(true);
             Time.timeScale = 1;
         }
 

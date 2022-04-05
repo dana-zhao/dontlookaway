@@ -12,8 +12,9 @@ public class GameStatus : MonoBehaviour
     //public const int MAXLIFE = 5;
     //public int currentLife = MAXLIFE;
     public bool allCollect = false;
+    public bool flag = true;
 
-    public Slider healthbar;
+    // public Slider healthbar;
 
     public void collect() {
         currentInventory ++ ;
@@ -45,6 +46,15 @@ public class GameStatus : MonoBehaviour
         currentInventory = 0;
         currentTasks = 0;
         allCollect = false;
+        flag = true;
+    }
+
+    public void Reset(){
+        currentLevel = SceneManager.GetActiveScene().name;
+        currentInventory = 0;
+        currentTasks = 0;
+        allCollect = false;
+        flag = true;
     }
 
 }

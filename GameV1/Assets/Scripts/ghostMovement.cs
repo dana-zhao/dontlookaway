@@ -232,10 +232,15 @@ public class ghostMovement : MonoBehaviour
             
         }
 
-        if (gameStatus.allCollected())
+        if (!flipp && gameStatus.allCollected())
         {
             flipp = true;
             AkSoundEngine.SetState("States", "MonsterFlippy");
+            AkSoundEngine.PostEvent("ConditionFlip",gameObject);
+
+            // var textMeshPro = FloatingTextPrefab.GetComponent<popUpTextSelf>();
+            // textMeshPro.setText("Collect and run!!", 500);
+            // ShowFloatingText();
         }
 
         float dist = Vector3.Distance(target.transform.position, transform.position);

@@ -6,10 +6,12 @@ public class tutController : MonoBehaviour
 {
     public GameObject Objective;
     public GameObject FloatingTextPrefab;
+    public GameStatus gameStatus;
+    bool flag = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameStatus = GameObject.FindObjectOfType<GameStatus>();
     }
 
     void ShowFloatingText()
@@ -21,8 +23,9 @@ public class tutController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Objective.transform.childCount <= 2)
+        if (flag && gameStatus.allCollected())
         {
+            flag = false;
             var textMeshPro = FloatingTextPrefab.GetComponent<popUpTextSelf>();
             textMeshPro.setText("EXIT HERE", 500);
             ShowFloatingText();

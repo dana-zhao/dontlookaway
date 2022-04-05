@@ -77,8 +77,9 @@ public class PickUp : MonoBehaviour
             closeEnough = true;
 
         }
-        if (gameStatus.allCollected())
+        if (gameStatus.flag &&  gameStatus.allCollected())
         {
+            gameStatus.flag = false;
             var textMeshPro = FloatingTextPrefab.GetComponent<popUpTextSelf>();
             textMeshPro.setText("Collect and run!!", 500);
             ShowFloatingText();
@@ -105,7 +106,7 @@ public class PickUp : MonoBehaviour
         }
         if (gameStatus.allCollected())
         {
-            AkSoundEngine.PostEvent("ConditionFlip",gameObject);
+            // AkSoundEngine.PostEvent("ConditionFlip",gameObject);
         }
         
     }

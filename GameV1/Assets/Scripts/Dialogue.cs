@@ -9,14 +9,15 @@ public class Dialogue : MonoBehaviour
     public GameObject obj;
     void Start()
     {
-     i = 0;   
+        obj.SetActive(true);
+        i = 0;   
     }
 
     // Update is called once per frame
     void Update()
     {
         i++;
-        if(i > 1000){
+        if(i > 800){
             obj.SetActive(false);
         }
     
