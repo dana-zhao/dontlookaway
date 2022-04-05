@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BATTERYPICKUP = 934648088U;
+        static const AkUniqueID CANOPICJARS = 3046617786U;
         static const AkUniqueID CONDITIONFLIP = 3475515249U;
         static const AkUniqueID CRYSTALPICKUP = 3943406705U;
         static const AkUniqueID DEATH = 779278001U;
@@ -21,6 +22,7 @@ namespace AK
         static const AkUniqueID FOOTSTEPLOOPHALL = 2400612304U;
         static const AkUniqueID GHOSTCLOSER = 2619949524U;
         static const AkUniqueID GHOSTIDLE1 = 1935768893U;
+        static const AkUniqueID GHOSTVERYCLOSE = 1197743950U;
         static const AkUniqueID GIFTSHOPBGM = 1369225059U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID JUMPLAND = 1548130050U;
@@ -31,7 +33,7 @@ namespace AK
         static const AkUniqueID MUSICFLIPP = 738973617U;
         static const AkUniqueID PAUSEFOOTSTEPS = 2271933638U;
         static const AkUniqueID RESUMEFOOTSTEPS = 681389337U;
-        static const AkUniqueID ROOMTONE1 = 2410724393U;
+        static const AkUniqueID STATUEBGM = 2006784557U;
         static const AkUniqueID STOPFOOTSTEPS = 177027278U;
         static const AkUniqueID TORCHLOOP = 4171534483U;
     } // namespace EVENTS
@@ -66,6 +68,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID GHOSTIDLEAUXBUS = 3167756628U;
+        static const AkUniqueID GHOSTVERYCLOSEAUXBUS = 2351898894U;
         static const AkUniqueID GIFTSHOP = 4135210879U;
     } // namespace AUX_BUSSES
 

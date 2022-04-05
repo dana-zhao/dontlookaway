@@ -113,6 +113,10 @@ MonoBehaviour:
   detectionRange: 0
   closeEnough: 0
   FloatingTextPrefab: {fileID: 0}
-  Objective: {fileID: 0}
   isTut: 0
+  GameStatus: {fileID: 0}
   sfx_CrystalSfxPickUp: {fileID: 0}
+  CrystalPickUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: efd2f9ce8350ef04a969dae397f3b0a9, type: 2}

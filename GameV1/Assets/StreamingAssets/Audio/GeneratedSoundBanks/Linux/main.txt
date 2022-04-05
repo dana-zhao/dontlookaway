@@ -6,15 +6,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	779278001	Death			\Default Work Unit\Death	
 	793810216	LibraryBGM			\Default Work Unit\LibraryBGM	
 	934648088	BatteryPickup			\Default Work Unit\BatteryPickup	
+	1197743950	GhostVeryClose			\Default Work Unit\GhostVeryClose	
 	1369225059	GiftShopBGM			\Default Work Unit\GiftShopBGM	
 	1548130050	JumpLand			\Default Work Unit\JumpLand	
 	1616845350	KeyPickup			\Default Work Unit\KeyPickup	
 	1935768893	GhostIdle1			\Default Work Unit\GhostIdle1	
+	2006784557	StatueBGM			\Default Work Unit\StatueBGM	
 	2271933638	PauseFootsteps			\Default Work Unit\PauseFootsteps	
 	2400612304	FootstepLoopHall			\Default Work Unit\FootstepLoopHall	
-	2410724393	RoomTone1			\Default Work Unit\RoomTone1	
 	2429995097	FootstepLoop			\Default Work Unit\FootstepLoop	
 	2619949524	GhostCloser			\Default Work Unit\GhostCloser	
+	3046617786	CanopicJars			\Default Work Unit\CanopicJars	
 	3372421815	LevelStart			\Default Work Unit\LevelStart	
 	3475515249	ConditionFlip			\Default Work Unit\ConditionFlip	
 	3833651337	Jump			\Default Work Unit\Jump	
@@ -40,11 +42,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2351898894	GhostVeryCloseAuxBus			\Default Work Unit\Master Audio Bus\GhostVeryCloseAuxBus	
 	3167756628	GhostIdleAuxBus			\Default Work Unit\Master Audio Bus\GhostIdleAuxBus	
 	4135210879	GiftShop			\Default Work Unit\Master Audio Bus\GiftShop	
 
 Effect plug-ins	ID	Name	Type				Notes
 	84696384	_	Wwise Pitch Shifter			
+	428091040	Wwise Parametric EQ (Custom)	Wwise Parametric EQ			
 	2689776681	New_Wwise_Parametric_EQ_01	Wwise Parametric EQ			
 	2791153688	Hall_Small	Wwise RoomVerb			
 	2949243095	Hall_Small_Bright	Wwise RoomVerb			
@@ -55,7 +59,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3688144	sfx_GhostIdle_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_GhostIdle_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Ghost\sfx_GhostIdle_2		7688436
 	6411874	sfx_footstepLoopHall	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_footstepLoop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_footstepLoopHall		20436
 	14623319	sfx_ghostCloser	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_ghostCloser_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Ghost\sfx_ghostCloser		4848128
+	29187178	sfx_canopicJars2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_canopicJars2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_canopicJars\sfx_canopicJars2		95204
 	40509159	sfx_Torch_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_Torch_1_F69107AF.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Torch_1		950308
+	55309313	mus_StatueBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\DLA - Statue BGM - v.03-loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_StatueBGM		22887820
 	84616786	sfx_newFoostep_3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_newFoostep_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_foostepBlend\sfx_newFootstepRandom\sfx_newFoostep_3		51820
 	97578855	sfx_CrystalPickUp_2	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_CrystalPickUp_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_CrystalPickUp_2		34280
 	161785269	sfx_KnifeStab_1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_KnifeStab_1_CAC22E5E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_Death\sfx_KnifeStab_1		106980
@@ -64,12 +70,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	336414517	mus_GiftShopBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_GiftShopBGM_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_GiftShopBGM		25256436
 	338983936	mus_MainHallBGM	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_MainHallBGM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_MainHallBGM		17321668
 	347964455	sfx_Jump	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_46C5EF0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Jump		21948
-	356696703	426767__cmilan__apartment-room-tone	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\426767__cmilan__apartment-room-tone_F58BFE57.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\426767__cmilan__apartment-room-tone		3860416
 	385304002	mus_BrassTapeLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_BrassTapeLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_BrassTapeLoop_v_04		2127820
+	385666328	sfx_canopicJars4	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_canopicJars4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_canopicJars\sfx_canopicJars4		67512
+	510711240	sfx_canopicJars1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_canopicJars1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_canopicJars\sfx_canopicJars1		95204
+	559517148	sfx_canopicJars3	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_canopicJars3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_canopicJars\sfx_canopicJars3		95204
 	658321127	sfx_ConditionFlipBassHit	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_ConditionFlipBassHit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlipBassHit		1427204
 	709223425	sfx_DeathSlobber	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\339191__shillsuqat__chewing-zombie-wav_983277FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\sfx_Death\sfx_DeathSlobber		64238
 	717207791	422869__ipaddeh__jump-landing-wood-02	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\422869__ipaddeh__jump-landing-wood-02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\422869__ipaddeh__jump-landing-wood-02		184676
 	785133605	sfx_Land	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\349081__yoyodaman234__jumping-over-object-while-hiking_7F483FAE.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Land		13262
+	789614239	sfx_GhostVeryClose	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_GhostVeryClose_E7E4AEDE.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_Ghost\sfx_GhostVeryClose		2652128
 	817937983	sfx_ConditionFlip	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_ConditionFlip_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_ConditionFlipBlend\sfx_ConditionFlip		1042280
 	863462924	mus_StringChatterLoop_v_04	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\mus_StringChatterLoop_v.04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non-World\mus_Flipp\mus_StringChatterLoop_v_04		4477052
 	879034394	sfx_BatteryPickup1	E:\NEW\Wwise Projects\DLA_Wwise\.cache\Linux\SFX\sfx_BatteryPickup1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\sfx_BatteryPickup1		51820

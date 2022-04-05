@@ -235,6 +235,10 @@ PrefabInstance:
       propertyPath: sfx_CrystalSfxPickUp
       value: 
       objectReference: {fileID: 2123881799}
+    - target: {fileID: 6814787785093205774, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
+      propertyPath: CrystalPickUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: efd2f9ce8350ef04a969dae397f3b0a9, type: 2}
     - target: {fileID: 7635649943850832393, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -513,6 +517,10 @@ PrefabInstance:
       propertyPath: sfx_CrystalSfxPickUp
       value: 
       objectReference: {fileID: 2123881799}
+    - target: {fileID: 6814787785093205774, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
+      propertyPath: CrystalPickUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: efd2f9ce8350ef04a969dae397f3b0a9, type: 2}
     - target: {fileID: 7635649943850832393, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6490,6 +6498,10 @@ PrefabInstance:
       propertyPath: sfx_CrystalSfxPickUp
       value: 
       objectReference: {fileID: 2123881799}
+    - target: {fileID: 6814787785093205774, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
+      propertyPath: CrystalPickUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: efd2f9ce8350ef04a969dae397f3b0a9, type: 2}
     - target: {fileID: 7635649943850832393, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7263,6 +7275,10 @@ PrefabInstance:
       propertyPath: sfx_CrystalSfxPickUp
       value: 
       objectReference: {fileID: 2123881799}
+    - target: {fileID: 6814787785093205774, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
+      propertyPath: CrystalPickUp.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: efd2f9ce8350ef04a969dae397f3b0a9, type: 2}
     - target: {fileID: 7635649943850832393, guid: 4c61c9c53d54e9d47a00237b608e196c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -7642,7 +7658,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 00dca6d9dd4148d428b0192b4dd0d53b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: af29b30e9a85d8e409a3e58f085f4365, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

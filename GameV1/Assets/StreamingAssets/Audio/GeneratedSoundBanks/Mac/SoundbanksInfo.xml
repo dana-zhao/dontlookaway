@@ -11,16 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1205877595">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1894737681">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="2351898894" Name="GhostVeryCloseAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostVeryCloseAuxBus"/>
 				<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2609194027">
+		<SoundBank Id="3161908922" Language="SFX" Hash="350844343">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -36,6 +37,7 @@
 						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="3046617786" Name="CanopicJars" ObjectPath="\Events\Default Work Unit\CanopicJars" DurationType="OneShot" DurationMin="0.350958" DurationMax="0.495187"/>
 				<Event Id="3475515249" Name="ConditionFlip" ObjectPath="\Events\Default Work Unit\ConditionFlip" DurationType="OneShot" DurationMin="7.682687" DurationMax="7.682687"/>
 				<Event Id="3943406705" Name="CrystalPickUp" ObjectPath="\Events\Default Work Unit\CrystalPickUp" DurationType="OneShot" DurationMin="0.156016" DurationMax="0.197023">
 					<IncludedMemoryFiles>
@@ -120,12 +122,18 @@
 							<ShortName>sfx_ghostCloser.wav</ShortName>
 							<Path>SFX\sfx_ghostCloser_D79FB2B7.wem</Path>
 						</File>
+						<File Id="789614239" Language="SFX">
+							<ShortName>sfx_GhostVeryClose.wav</ShortName>
+							<Path>SFX\sfx_GhostVeryClose_E7E4AEDE.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
+						<AuxBus Id="2351898894" Name="GhostVeryCloseAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostVeryCloseAuxBus"/>
 						<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1197743950" Name="GhostVeryClose" ObjectPath="\Events\Default Work Unit\GhostVeryClose" MaxAttenuation="14." DurationType="Infinite"/>
 				<Event Id="1369225059" Name="GiftShopBGM" ObjectPath="\Events\Default Work Unit\GiftShopBGM" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="336414517" Language="SFX">
@@ -187,17 +195,7 @@
 				<Event Id="738973617" Name="MusicFlipp" ObjectPath="\Events\Default Work Unit\MusicFlipp" DurationType="Infinite"/>
 				<Event Id="2271933638" Name="PauseFootsteps" ObjectPath="\Events\Default Work Unit\PauseFootsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="681389337" Name="ResumeFootsteps" ObjectPath="\Events\Default Work Unit\ResumeFootsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2410724393" Name="RoomTone1" ObjectPath="\Events\Default Work Unit\RoomTone1" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="356696703" Language="SFX">
-							<ShortName>426767__cmilan__apartment-room-tone.wav</ShortName>
-							<Path>SFX\426767__cmilan__apartment-room-tone_F58BFE57.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-					<AuxBusSends>
-						<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
-					</AuxBusSends>
-				</Event>
+				<Event Id="2006784557" Name="StatueBGM" ObjectPath="\Events\Default Work Unit\StatueBGM" DurationType="Infinite"/>
 				<Event Id="177027278" Name="StopFootsteps" ObjectPath="\Events\Default Work Unit\StopFootsteps" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="4171534483" Name="TorchLoop" ObjectPath="\Events\Default Work Unit\TorchLoop" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -212,6 +210,7 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedAuxBusses>
+				<AuxBus Id="2351898894" Name="GhostVeryCloseAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostVeryCloseAuxBus"/>
 				<AuxBus Id="3167756628" Name="GhostIdleAuxBus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus"/>
 				<AuxBus Id="4135210879" Name="GiftShop" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GiftShop"/>
 			</IncludedAuxBusses>
@@ -232,9 +231,17 @@
 					<ShortName>sfx_ghostCloser.wav</ShortName>
 					<Path>SFX\sfx_ghostCloser_D79FB2B7.wem</Path>
 				</File>
+				<File Id="29187178" Language="SFX">
+					<ShortName>sfx_canopicJars2.wav</ShortName>
+					<Path>SFX\sfx_canopicJars2_10C4C929.wem</Path>
+				</File>
 				<File Id="40509159" Language="SFX">
 					<ShortName>sfx_Torch_1.wav</ShortName>
 					<Path>SFX\sfx_Torch_1_F69107AF.wem</Path>
+				</File>
+				<File Id="55309313" Language="SFX">
+					<ShortName>DLA - Statue BGM - v.03-loop.wav</ShortName>
+					<Path>SFX\DLA - Statue BGM - v.03-loop_D79FB2B7.wem</Path>
 				</File>
 				<File Id="84616786" Language="SFX">
 					<ShortName>sfx_newFoostep_3.wav</ShortName>
@@ -268,13 +275,21 @@
 					<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
 					<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_46C5EF0C.wem</Path>
 				</File>
-				<File Id="356696703" Language="SFX">
-					<ShortName>426767__cmilan__apartment-room-tone.wav</ShortName>
-					<Path>SFX\426767__cmilan__apartment-room-tone_F58BFE57.wem</Path>
-				</File>
 				<File Id="385304002" Language="SFX">
 					<ShortName>mus_BrassTapeLoop_v.04.wav</ShortName>
 					<Path>SFX\mus_BrassTapeLoop_v.04_D79FB2B7.wem</Path>
+				</File>
+				<File Id="385666328" Language="SFX">
+					<ShortName>sfx_canopicJars4.wav</ShortName>
+					<Path>SFX\sfx_canopicJars4_10C4C929.wem</Path>
+				</File>
+				<File Id="510711240" Language="SFX">
+					<ShortName>sfx_canopicJars1.wav</ShortName>
+					<Path>SFX\sfx_canopicJars1_10C4C929.wem</Path>
+				</File>
+				<File Id="559517148" Language="SFX">
+					<ShortName>sfx_canopicJars3.wav</ShortName>
+					<Path>SFX\sfx_canopicJars3_10C4C929.wem</Path>
 				</File>
 				<File Id="658321127" Language="SFX">
 					<ShortName>sfx_ConditionFlipBassHit.wav</ShortName>
@@ -291,6 +306,10 @@
 				<File Id="785133605" Language="SFX">
 					<ShortName>349081__yoyodaman234__jumping-over-object-while-hiking.wav</ShortName>
 					<Path>SFX\349081__yoyodaman234__jumping-over-object-while-hiking_7F483FAE.wem</Path>
+				</File>
+				<File Id="789614239" Language="SFX">
+					<ShortName>sfx_GhostVeryClose.wav</ShortName>
+					<Path>SFX\sfx_GhostVeryClose_E7E4AEDE.wem</Path>
 				</File>
 				<File Id="817937983" Language="SFX">
 					<ShortName>sfx_ConditionFlip.wav</ShortName>

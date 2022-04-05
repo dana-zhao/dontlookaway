@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b6c286c0779a4048b93d6db986a1fced
     GuidInternal: 
-    m_lastTime: -8585524850743270629
+    m_lastTime: -8585524825586352577
     List:
     - name: GhostIdleAuxBus
       guid: ec50faf696a8ff4dac4b2d232c2578c1
@@ -57,6 +57,23 @@ MonoBehaviour:
         ObjectType: 1
         guid: ec50faf696a8ff4dac4b2d232c2578c1
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostIdleAuxBus
+    - name: GhostVeryCloseAuxBus
+      guid: 53a9499e85861c4c9444b1249c14689d
+      id: 2351898894
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b6c286c0779a4048b93d6db986a1fced
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: GhostVeryCloseAuxBus
+        ObjectType: 1
+        guid: 53a9499e85861c4c9444b1249c14689d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\GhostVeryCloseAuxBus
     - name: GiftShop
       guid: 79a327ebe0e5614cbbead48523ced1f2
       id: 4135210879
@@ -100,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 350a3f5c2da8b14e9b32586ea2d8a9c3
     GuidInternal: 
-    m_lastTime: -8585536709629854521
+    m_lastTime: -8585524791616702112
     List:
     - name: main
       guid: 62eaee3f5b63754f92d66e78c6ded703
@@ -128,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: c195e216c6e300469118a271a9cd8058
     GuidInternal: 
-    m_lastTime: -8585536403569665577
+    m_lastTime: -8585524791616832232
     List:
     - name: BatteryPickup
       guid: b628176ae679ca4dae03e4a466624578
@@ -144,9 +161,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: b628176ae679ca4dae03e4a466624578
       Path: Events\Default Work Unit\BatteryPickup
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: 0.269229
       minDuration: 0.269229
+    - name: CanopicJars
+      guid: a6b1126a1e0c8a49ac95f90fb16050de
+      id: 3046617786
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: CanopicJars
+        ObjectType: 3
+        guid: a6b1126a1e0c8a49ac95f90fb16050de
+      Path: Events\Default Work Unit\CanopicJars
+      maxAttenuation: 0
+      maxDuration: 0.495187
+      minDuration: 0.350958
     - name: ConditionFlip
       guid: e1226cf90170cd4abf4e210dcc066fba
       id: 3475515249
@@ -178,7 +212,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f882455631b71d4b96d1310d38c4ceba
       Path: Events\Default Work Unit\CrystalPickUp
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: 0.197023
       minDuration: 0.156016
     - name: Death
@@ -266,6 +300,23 @@ MonoBehaviour:
       maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
+    - name: GhostVeryClose
+      guid: 4f097b7e977a4a469b96b0a8c8459e86
+      id: 1197743950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c195e216c6e300469118a271a9cd8058
+      - ElementName: GhostVeryClose
+        ObjectType: 3
+        guid: 4f097b7e977a4a469b96b0a8c8459e86
+      Path: Events\Default Work Unit\GhostVeryClose
+      maxAttenuation: 14
+      maxDuration: -1
+      minDuration: -1
     - name: GiftShopBGM
       guid: 0a34c80ddc1d644e9959ba9f4a0acdd8
       id: 1369225059
@@ -331,7 +382,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9f56713c642cba45ab13e5aa23516b32
       Path: Events\Default Work Unit\KeyPickup
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: 0.221146
       minDuration: 0.221146
     - name: LevelStart
@@ -436,9 +487,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: RoomTone1
-      guid: 3130d6460dfac04aa766ae3271e53c5c
-      id: 2410724393
+    - name: StatueBGM
+      guid: d82c3feeda71a84f81a9d481aad65e02
+      id: 2006784557
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -446,10 +497,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: c195e216c6e300469118a271a9cd8058
-      - ElementName: RoomTone1
+      - ElementName: StatueBGM
         ObjectType: 3
-        guid: 3130d6460dfac04aa766ae3271e53c5c
-      Path: Events\Default Work Unit\RoomTone1
+        guid: d82c3feeda71a84f81a9d481aad65e02
+      Path: Events\Default Work Unit\StatueBGM
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -484,7 +535,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 90e5e7fcfadc97459caed47e98677644
       Path: Events\Default Work Unit\TorchLoop
-      maxAttenuation: 100
+      maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
@@ -610,7 +661,7 @@ MonoBehaviour:
     m_lastTime: -8585541272190714356
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000001f00000020000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000001f000000200000009400000095000000e8000000e9000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
