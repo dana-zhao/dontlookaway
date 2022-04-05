@@ -17,13 +17,13 @@ public class GameStatus : MonoBehaviour
     // public Slider healthbar;
 
     public void collect() {
-        currentInventory ++ ;
+        currentInventory++ ;
         allCollect = currentInventory == currentTasks;
 
     }
 
     public void newTask(){
-        currentTasks ++; 
+        currentTasks++; 
     }
 
 
@@ -42,11 +42,11 @@ public class GameStatus : MonoBehaviour
 
     void Start(){
         //healthbar.value = currentLife / MAXLIFE;
-        currentLevel = SceneManager.GetActiveScene().name;
-        currentInventory = 0;
-        currentTasks = 0;
-        allCollect = false;
-        flag = true;
+        // currentLevel = SceneManager.GetActiveScene().name;
+        // currentInventory = 0;
+        // currentTasks = 0;
+        // allCollect = false;
+        // flag = true;
     }
 
     public void Reset(){

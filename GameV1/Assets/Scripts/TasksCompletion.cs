@@ -42,6 +42,8 @@ public class TasksCompletion : MonoBehaviour
     public GameObject ToogleGroup;
     public GameObject TaskTemplate; 
 
+    public int count = 0;
+
 
     private Dictionary<string, GameObject> simpleGameObject = new Dictionary<string, GameObject>();
     public GameStatus gameStatus;
@@ -60,9 +62,13 @@ public class TasksCompletion : MonoBehaviour
             t.SetActive(true);
             simpleGameObject[task.Key] = t;
             gameStatus.newTask();
+
+            count++;
         }
 
         Simple.SetActive(true);
+
+        // gameStatus.currentTasks = 4;
 
     }
 
