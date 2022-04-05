@@ -13,8 +13,7 @@ public class TasksCompletion : MonoBehaviour
                 {"Blue crystal (1)", "Blue Crystal 2"},
                 {"Blue crystal (2)", "Blue Crystal 3"},
                 {"Clear crystal", "Clear Crystal 1"},
-                {"Key", "Key for exit"},
-                {"Battery", "Battery"}
+                {"Key", "Key for exit"}
             }
         },
         {"Library", new Dictionary<string, string>

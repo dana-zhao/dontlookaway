@@ -13,7 +13,7 @@ public class GameStatus : MonoBehaviour
     //public int currentLife = MAXLIFE;
     public bool allCollect = false;
 
-    public Slider healthbar;
+    // public Slider healthbar;
 
     public void collect() {
         currentInventory ++ ;
