@@ -18,16 +18,16 @@ public class NextLevel : MonoBehaviour
         detectionRange = 5;
         level = GameStatus.currentLevel;
         if (level == null) {
-            level = "Gift_Shop";
+            nextLevel = "Gift_Shop";
         }
         else if (level == "Gift_Shop"){
-            level = "Library";
+            nextLevel = "Library";
         }
         else if (level =="Library") {
-            level = "Statue";
+            nextLevel = "Statue";
         }
         else if (level == "Statue") {
-            level = "Tomb";
+            nextLevel = "Tomb";
         }
     }
 
