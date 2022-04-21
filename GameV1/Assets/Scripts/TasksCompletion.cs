@@ -18,9 +18,9 @@ public class TasksCompletion : MonoBehaviour
         },
         {"Library", new Dictionary<string, string>
             {
-                {"Blue crystal", "Blue Crystal 1"},
-                {"Blue crystal (1)", "Blue Crystal 2"},
-                {"Blue crystal (2)", "Blue Crystal 3"},
+                {"Scept eye", "Scept eye"},
+                {"Scept stick", "Scept stick"},
+                {"Scept head", "Scept head"},
                 {"Key", "Key for exit"},
                 {"Battery", "Battery for flashlight"},
             }
