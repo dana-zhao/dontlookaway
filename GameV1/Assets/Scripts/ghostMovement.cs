@@ -214,10 +214,10 @@ public class ghostMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Z))
-        {
-            teleport();
-        }
+        //if (Input.GetKeyUp(KeyCode.Z))
+        //{
+        //    teleport();
+        //}
 
         if (lastTickSeen && !isSeen)
         {
@@ -225,12 +225,12 @@ public class ghostMovement : MonoBehaviour
         }
         //isVisible = isInSight(transform.position, target);
         //manually flipping the movement condition
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            Debug.Log("Monster condition flipped!");
-            flipp = !flipp;
+        //if (Input.GetKeyUp(KeyCode.F))
+        //{
+        //    Debug.Log("Monster condition flipped!");
+        //    flipp = !flipp;
             
-        }
+        //}
 
         if (!flipp && gameStatus.allCollected())
         {
